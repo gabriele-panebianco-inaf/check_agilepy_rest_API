@@ -1,6 +1,8 @@
 from agilepy.api.AGAnalysis import AGAnalysis
+
 import pathlib
 import argparse
+import os
 
 def GetTarget(targetnumber):
     
@@ -33,14 +35,21 @@ def GetTarget(targetnumber):
     
     return Target
 
+def make_directory(path):
+    "Create directory if it does not exist"
+    if not os.path.exists(path):
+        os.makedirs(path)
+    return None
 
+if __name__=="__main__":
+    
+    # Set the path of the Directories to use.
+    CurrentDirectory = pathlib.Path(__file__).absolute().parent
+    DataFilePath = CurrentDirectory.joinpath(f"DataFiles/")
+    ConfFileDire = CurrentDirectory.joinpath(f"ConfigurationFiles")
+    make_directory(DataFilePath)
+    make_directory(ConfFileDire)
 
-if __file__=="__main__":
-    
-    # Set the path of the Directory to store downloaded files.
-    CurrentDirectory = pathlib.Path(__file__).absolute
-    DataFilePath = CurrentDirectory.join(f"DataFiles/")
-    
     # pipeline options
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--target", help="name of the target XML file", type=int)
@@ -48,20 +57,20 @@ if __file__=="__main__":
 
     # Get Target Name
     Target = GetTarget(args.target)
-    ConfFilePath = CurrentDirectory.join(f"ConfigurationFiles/AgilepyConf_{Target['SourceName']}.yml")
+    ConfFilePath = ConfFileDire.joinpath(f"AgilepyConf_{Target['SourceName']}.yml")
     
     # Write the Configuration YAML file
     AGAnalysis.getConfiguration(
-        confFilePath = ConfFilePath,
+        confFilePath = str(ConfFilePath),
 
         # 1 - Input
         evtfile=None,
         logfile=None,
         userestapi=True,
-        datapath=DataFilePath,
+        datapath=str(DataFilePath),
 
         # 2 - Output
-        outputDir = CurrentDirectory.join(f"Results/"),
+        outputDir = str(CurrentDirectory.joinpath(f"Results/")),
         sourceName = Target['SourceName'],
         userName = "Gabriele",
         verboselvl = 0,
