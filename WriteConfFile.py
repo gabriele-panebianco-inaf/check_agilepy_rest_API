@@ -31,7 +31,7 @@ def GetTarget(targetnumber):
                 'glat': -2.84
                 }
     else:
-        raise ValueError("Target number not accepted.")
+        raise ValueError(f"Target number {targetnumber} not valid.")
     
     return Target
 
@@ -50,9 +50,9 @@ if __name__=="__main__":
     make_directory(DataFilePath)
     make_directory(ConfFileDire)
 
-    # pipeline options
+    # Argument
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--target", help="name of the target XML file", type=int)
+    parser.add_argument("-t", "--target", help="Number of the target source", type=int)
     args = parser.parse_args()
 
     # Get Target Name
