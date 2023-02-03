@@ -35,7 +35,7 @@ def GetTargetYAML(TargetNumber):
     SourceName=Targets[f'Target_{TargetNumber}']['SourceName']
     
     # Set File path
-    path=str(ConfFileDire.joinpath(f"AgilepyConf_{SourceName}.yml"))
+    path=str(ConfFileDire.joinpath(f"Download_{SourceName}.yml"))
     
     # Check if it exists
     if not os.path.exists(path):

@@ -10,6 +10,7 @@ It can be run as
     ```
     Change `0` with the progressive number of the Target you are interested in.
     Configuration files are wirtten in [ConfigurationFiles](./ConfigurationFiles/).
+    There are two versions of configuration files: one used to download the data only (`Download_*.yml`), one used for the scientific analysis (`Analysis_*.yml`).
 - [DownloadData.py](./DownloadData.py): Read the Agilepy Configuration file created for a given target and tries to download the data with the REST API.
 It can be run as
     ```

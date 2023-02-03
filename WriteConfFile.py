@@ -53,21 +53,46 @@ if __name__=="__main__":
     
     # Get Target Name
     Target = GetTarget(TargetsFile, args.target)
-    ConfFilePath = ConfFileDire.joinpath(f"AgilepyConf_{Target['SourceName']}.yml")
+    ConfFilePath = str(ConfFileDire.joinpath(f"Download_{Target['SourceName']}.yml"))
     
     # Make Directory to store Downloaded Data
-    DataFilePath = CurrentDirectory.joinpath(f"DataFiles/{args.target}_{Target['SourceName']}")
+    DataFilePath = str(CurrentDirectory.joinpath(f"DataFiles/{args.target}_{Target['SourceName']}"))
     make_directory(DataFilePath)
     
-    # Write the Configuration YAML file
+    # Write the Configuration YAML file for Downloading Data
     AGAnalysis.getConfiguration(
-        confFilePath = str(ConfFilePath),
+        confFilePath = ConfFilePath,
 
         # 1 - Input
         evtfile=None,
         logfile=None,
         userestapi=True,
-        datapath=str(DataFilePath),
+        datapath=DataFilePath,
+
+        # 2 - Output
+        outputDir = str(CurrentDirectory.joinpath(f"Results/")),
+        sourceName = Target['SourceName'],
+        userName = "Gabriele",
+        verboselvl = 2,
+
+        # 3 - Selection
+        tmin = Target['tmin'],
+        tmax = Target['tmax'],
+        timetype = Target['TimeType'],
+        glon = Target['glon'],
+        glat = Target['glat'],
+    )
+    
+    # Write the Configuration YAML file for Analysis
+    ConfFilePath = str(ConfFileDire.joinpath(f"Analysis_{Target['SourceName']}.yml"))
+    AGAnalysis.getConfiguration(
+        confFilePath = ConfFilePath,
+
+        # 1 - Input
+        evtfile=f"{DataFilePath}/EVT.index",
+        logfile=f"{DataFilePath}/LOG.index",
+        userestapi=False,
+        datapath=DataFilePath,
 
         # 2 - Output
         outputDir = str(CurrentDirectory.joinpath(f"Results/")),
