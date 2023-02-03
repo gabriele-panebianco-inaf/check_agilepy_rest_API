@@ -9,7 +9,7 @@ output:
   outdir: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results
   filenameprefix: analysis_product
   logfilenameprefix: analysis_log
-  sourcename: Vela
+  sourcename: Vela_Long
   username: Gabriele
   verboselvl: 2
 
@@ -17,7 +17,7 @@ selection:
   emin: 100
   emax: 10000
   tmin: 59670
-  tmax: 59760
+  tmax: 59944
   timetype: MJD
   glon: 263.59
   glat: -2.84

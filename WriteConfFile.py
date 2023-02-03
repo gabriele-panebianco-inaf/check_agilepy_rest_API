@@ -7,7 +7,7 @@ import os
 def GetTarget(targetnumber):
     
     if targetnumber==0:
-        Target={'SourceName':'Vela',
+        Target={'SourceName':'Vela_Long',
                 'TimeType':'MJD',
                 'tmin': 59670, # 2022-04-01 00:00:00 UTC
                 'tmax': 59944, # 2022-12-31 00:00:00 UTC
@@ -27,6 +27,14 @@ def GetTarget(targetnumber):
                 'TimeType':'MJD',
                 'tmin': 59658, # 2022-03-20 00:00:00 UTC
                 'tmax': 59679, # 2022-04-10 00:00:00 UTC
+                'glon': 263.59,
+                'glat': -2.84
+                }
+    elif targetnumber==3:
+        Target={'SourceName':'Vela',
+                'TimeType':'MJD',
+                'tmin': 59670, # 2022-04-01 00:00:00 UTC
+                'tmax': 59760, # 2022-06-30 00:00:00 UTC
                 'glon': 263.59,
                 'glat': -2.84
                 }
@@ -73,7 +81,7 @@ if __name__=="__main__":
         outputDir = str(CurrentDirectory.joinpath(f"Results/")),
         sourceName = Target['SourceName'],
         userName = "Gabriele",
-        verboselvl = 0,
+        verboselvl = 2,
 
         # 3 - Selection
         tmin = Target['tmin'],

@@ -11,7 +11,7 @@ output:
   logfilenameprefix: analysis_log
   sourcename: Vela_across_restricted_period
   username: Gabriele
-  verboselvl: 0
+  verboselvl: 2
 
 selection:  
   emin: 100
