@@ -64,3 +64,4 @@ If I run the container as shown in documentation data cannot be downloaded, as t
     ```
     WARNING: Published ports are discarded when using host network mode
     ```
+    But then it works, the results of case 5 and case 4 are consistent.
