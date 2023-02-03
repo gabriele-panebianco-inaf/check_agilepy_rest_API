@@ -10,7 +10,8 @@ def GetTarget(TargetsFile, TargetNumber):
     Read the YAML file with the targets and return the dict of the requested Target,
     identified by its progressivenumber.
     
-    Parameters:
+    Parameters
+    ----------
     TargetsFile : str
         Path of the file with the Targets and their progressive number.
     TargetNumber : int
