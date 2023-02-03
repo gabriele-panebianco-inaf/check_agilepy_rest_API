@@ -3,10 +3,10 @@ input:
   evtfile: None
   logfile: None
   userestapi: True
-  datapath: /agile/check_agilepy_rest_API/DataFiles/4_3C454.3
+  datapath: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3
 
 output:
-  outdir: /agile/check_agilepy_rest_API/Results
+  outdir: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results
   filenameprefix: analysis_product
   logfilenameprefix: analysis_log
   sourcename: 3C454.3

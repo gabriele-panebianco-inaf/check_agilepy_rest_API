@@ -1,0 +1,273 @@
+Configuration File: /home/gabriele/Documents/agile/check_agilepy_rest_API/ConfigurationFiles/Download_3C454.3.yml
+2023-02-03 19:03:35,380 [INFO    ] [AgilepyLogger] File and Console loggers are active. Log file: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/logs/analysis_log.log
+2023-02-03 19:03:35,381 [DEBUG   ] [AGDataset] opening coverage file at /home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/utils/AGILE_datacoverage
+2023-02-03 19:03:35,381 [INFO    ] [AGDataset] AGILE data coverage from 2007-12-01T12:00:00 to 2022-12-31T12:00:00
+2023-02-03 19:03:35,381 [INFO    ] [AGDataset] check coverage OK!
+2023-02-03 19:03:35,382 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.qfile does not exists
+2023-02-03 19:03:35,382 [INFO    ] [AGDataset] EVT data in interval 59911.16670138889 59913.16670138889 is missing!
+2023-02-03 19:03:35,382 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.qfile does not exists
+2023-02-03 19:03:35,382 [INFO    ] [AGDataset] LOG data in interval 59911.16670138889 59913.16670138889 is missing!
+2023-02-03 19:03:35,382 [INFO    ] [AGDataset] Downloading data from ssdc..
+2023-02-03 19:03:35,383 [INFO    ] [AGRest] Downloading filelist to download (59911.16670138889,59913.16670138889) (2022-11-28T04:00:03.000, 2022-11-30T04:00:03.000) from https://tools.ssdc.asi.it/AgileData/rest/GRIDList/2022-11-28T04:00:03.000/2022-11-30T04:00:03.000..
+2023-02-03 19:03:35,640 [INFO    ] [AGRest] Took 0.25656962394714355 seconds
+2023-02-03 19:03:35,640 [INFO    ] [AGRest] Downloading data (59911.16670138889,59913.16670138889) from https://tools.ssdc.asi.it/AgileData/rest/GRIDFiles/2022-11-28T04:00:03.000/2022-11-30T04:00:03.000..
+2023-02-03 19:07:13,282 [INFO    ] [AGRest] Took 217.6416277885437 seconds. Downloaded 424478720 bytes.
+2023-02-03 19:07:13,284 [INFO    ] [AGDataset] Extracting data from the tarball..
+2023-02-03 19:07:13,284 [DEBUG   ] [AGDataset] Extracting data from /tmp/agile_d1e37821-f169-481f-9c76-5ad7b82563f8.tar.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3
+2023-02-03 19:07:13,285 [DEBUG   ] [AGDataset] tmpFilePath.name is ag2211151200_2211301200_STD1Kal_FM.EVT.gz
+2023-02-03 19:07:13,420 [DEBUG   ] [AGDataset] Moving /tmp/std/2211151200_2211301200-416399/ag2211151200_2211301200_STD1Kal_FM.EVT.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT/ag2211151200_2211301200_STD1Kal_FM.EVT.gz.
+2023-02-03 19:07:13,421 [DEBUG   ] [AGDataset] Extracted 1 EVT files. Took 0.13619422912597656 seconds.
+2023-02-03 19:07:13,421 [DEBUG   ] [AGDataset] Removing /tmp/agile_d1e37821-f169-481f-9c76-5ad7b82563f8.tar.gz file.
+2023-02-03 19:07:13,421 [DEBUG   ] [AGDataset] Extracted files: ['std/2211151200_2211301200-416399/ag2211151200_2211301200_STD1Kal_FM.EVT.gz']
+2023-02-03 19:07:13,451 [DEBUG   ] [AGDataset] pathtoindex is /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index
+2023-02-03 19:07:13,452 [INFO    ] [Indexgen] Science tool called!
+2023-02-03 19:07:13,452 [DEBUG   ] [Indexgen] No products exist yet
+2023-02-03 19:07:13,452 [DEBUG   ] [Indexgen] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3
+2023-02-03 19:07:13,452 [DEBUG   ] [Indexgen] args: [PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT'), 'EVT', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index']
+2023-02-03 19:07:13,452 [DEBUG   ] [Indexgen] Executing command >>AG_indexgen /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT EVT /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index
+2023-02-03 19:07:13,465 [DEBUG   ] [Indexgen] Science tool stdout:
+
+
+
+
+2023-02-03 19:07:13,465 [INFO    ] [Indexgen] Science tool AG_indexgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index']
+2023-02-03 19:07:13,465 [INFO    ] [AGDataset] indexfile at ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index']
+2023-02-03 19:07:13,465 [DEBUG   ] [AGDataset] Extracting data from /tmp/agile_d1e37821-f169-481f-9c76-5ad7b82563f8.tar.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3
+2023-02-03 19:07:13,466 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-596635132_STD1Kal.LOG.gz
+2023-02-03 19:07:13,531 [DEBUG   ] [AGDataset] Moving /tmp/std/2211151200_2211301200-416399/STD1Kal_LOG/ag-596635132_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596635132_STD1Kal.LOG.gz.
+2023-02-03 19:07:13,531 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-596721532_STD1Kal.LOG.gz
+2023-02-03 19:07:13,588 [DEBUG   ] [AGDataset] Moving /tmp/std/2211151200_2211301200-416399/STD1Kal_LOG/ag-596721532_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596721532_STD1Kal.LOG.gz.
+2023-02-03 19:07:13,589 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-596807932_STD1Kal.LOG.gz
+2023-02-03 19:07:13,655 [DEBUG   ] [AGDataset] Moving /tmp/std/2211151200_2211301200-416399/STD1Kal_LOG/ag-596807932_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596807932_STD1Kal.LOG.gz.
+2023-02-03 19:07:13,655 [DEBUG   ] [AGDataset] Extracted 3 LOG files. Took 0.1893773078918457 seconds.
+2023-02-03 19:07:13,656 [DEBUG   ] [AGDataset] Removing /tmp/agile_d1e37821-f169-481f-9c76-5ad7b82563f8.tar.gz file.
+2023-02-03 19:07:13,656 [DEBUG   ] [AGDataset] Extracted files: ['std/2211151200_2211301200-416399/STD1Kal_LOG/ag-596635132_STD1Kal.LOG.gz', 'std/2211151200_2211301200-416399/STD1Kal_LOG/ag-596721532_STD1Kal.LOG.gz', 'std/2211151200_2211301200-416399/STD1Kal_LOG/ag-596807932_STD1Kal.LOG.gz']
+2023-02-03 19:07:13,663 [DEBUG   ] [AGDataset] pathtoindex is /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index
+2023-02-03 19:07:13,663 [INFO    ] [Indexgen] Science tool called!
+2023-02-03 19:07:13,663 [DEBUG   ] [Indexgen] No products exist yet
+2023-02-03 19:07:13,663 [DEBUG   ] [Indexgen] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3
+2023-02-03 19:07:13,663 [DEBUG   ] [Indexgen] args: [PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG'), 'LOG', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index']
+2023-02-03 19:07:13,663 [DEBUG   ] [Indexgen] Executing command >>AG_indexgen /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG LOG /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index
+2023-02-03 19:07:13,680 [DEBUG   ] [Indexgen] Science tool stdout:
+
+
+
+
+2023-02-03 19:07:13,680 [INFO    ] [Indexgen] Science tool AG_indexgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index']
+2023-02-03 19:07:13,680 [INFO    ] [AGDataset] indexfile at ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index']
+Generating maps..please wait.
+Fov bins loop:   0%|          | 0/1 [00:00<?, ?it/s]
+Energy bins loop: 0it [00:00, ?it/s]
+2023-02-03 19:07:13,772 [DEBUG   ] [AGAnalysis] Map generation => fovradmin 0 fovradmax 60 bincenter 30 emin 100 emax 10000 fileNamePrefix TN596692803.0_TX596865603.0_EN00100_EX10000_ID01 skymapL /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz skymapH /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 19:07:13,773 [INFO    ] [CtsMapGenerator] Science tool called!
+2023-02-03 19:07:13,773 [DEBUG   ] [CtsMapGenerator] No products exist yet
+2023-02-03 19:07:13,773 [DEBUG   ] [CtsMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0
+2023-02-03 19:07:13,773 [DEBUG   ] [CtsMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_ctsmapgen.par /tmp/agilepy_tmp/kdhai
+2023-02-03 19:07:13,784 [DEBUG   ] [CtsMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz', PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index'), 'None', 40, 0.5, 86.130001, -38.18, 180, 80, 6, 5, 'ARC', 596692803.0, 596865603.0, 100, 10000, 0, 60]
+2023-02-03 19:07:13,785 [DEBUG   ] [CtsMapGenerator] Executing command >>AG_ctsmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index None 40 0.5 86.130001 -38.18 180 80 6 5 ARC 596692803.0 596865603.0 100 10000 0 60
+2023-02-03 19:07:17,055 [DEBUG   ] [CtsMapGenerator] Science tool stdout:
+
+################################################################
+### Task AG_ctsmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.  ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz
+Event file index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index
+Time intervals list: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 86.130001
+Latitude of map center (galactic): -38.18
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Orbital phase code: 6
+Event filter code: 5
+Projection (ARC or AIT): ARC
+Initial time(sec): 596692803
+Final time(sec): 596865603
+Min energy: 100
+Max energy: 10000
+Min off-axis angle (degrees): 0
+Max off-axis angle (degrees): 60
+INTERVALS N=1:
+   596692803.000000 596865603.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index
+MakeSelection intervals: 
+596692803.000000 596865603.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT/ag2211151200_2211301200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT/ag2211151200_2211301200_STD1Kal_FM.EVT.gz > /tmp/fileHY3DvJ
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && ENERGY >= 100 && ENERGY <= 10000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+8940 rows total
+Selection file total: 8940
+Selected 8940 rows.
+fits_get_num_rows 0 rows.
+Reading all 8940 rows
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz
+creating Counts Map....................................
+writing Counts Map with 390 events
+writing header........................................
+
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz
+#################################################################
+###      AG_ctsmapgen5 exiting .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 19:07:17,055 [INFO    ] [CtsMapGenerator] Science tool AG_ctsmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz']
+2023-02-03 19:07:17,055 [INFO    ] [ExpMapGenerator] Science tool called!
+2023-02-03 19:07:17,055 [DEBUG   ] [ExpMapGenerator] No products exist yet
+2023-02-03 19:07:17,055 [DEBUG   ] [ExpMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0
+2023-02-03 19:07:17,055 [DEBUG   ] [ExpMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_expmapgen.par /tmp/agilepy_tmp/eqdut
+2023-02-03 19:07:17,064 [DEBUG   ] [ExpMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz', PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index'), '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz', 'None', 'None', 'None', 40, 0.5, 86.130001, -38.18, 180, 80, 0.5, 360, 5.0, 6, 'ARC', 4.0, 160, 2.1, 596692803.0, 596865603.0, 100, 10000, 0, 60]
+2023-02-03 19:07:17,064 [DEBUG   ] [ExpMapGenerator] Executing command >>AG_expmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz None None None 40 0.5 86.130001 -38.18 180 80 0.5 360 5.0 6 ARC 4.0 160 2.1 596692803.0 596865603.0 100 10000 0 60
+2023-02-03 19:07:21,280 [DEBUG   ] [ExpMapGenerator] Science tool stdout:
+
+################################################################
+###   AG_expmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.     ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+Grid log index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index
+Effective area file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz
+Energy dispersion file name: None
+Maplist file name: None
+Time intervals file name: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 86.130001
+Latitude of map center (galactic): -38.18
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Boresight movement tolerance (degrees): 0.5
+Roll tolerance (degrees): 360
+Earth tolerance (degrees): 5
+Orbital phase code: 6
+Projection (ARC or AIT): ARC
+Bin step size: 4
+LOG file step size: 160
+Spectral index: 2.1
+Initial time (sec): 596692803
+Final time (sec): 596865603
+Minimum energy: 100
+Maximum energy: 10000
+Min radius of field of view (degrees): 0
+Max radius of field of view (degrees): 60
+INTERVALS N=1:
+   596692803.000000 596865603.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index
+MakeSelection intervals: 
+596692803.000000 596865603.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596635132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596635132_STD1Kal.LOG.gz > /tmp/fileKadZOp
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+1550 rows total
+Selection file total: 1550
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596721532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596721532_STD1Kal.LOG.gz > /tmp/fileKadZOp
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4083 rows total
+Selection file total: 5633
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596807932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596807932_STD1Kal.LOG.gz > /tmp/fileKadZOp
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+2614 rows total
+Selection file total: 8247
+Selected 8247 rows.
+mdim: 40 mres: 0.5 mxdim: 80 nmaps: 1
+Dimension of m_aeffgrid: 8 19 14
+Dimension of m_avgValues: 8 19
+MakeGridAverage2: 100 5477
+Beginning interpolation..
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+Created file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+Creating image in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+#################################################################
+###  AG_expmapgen B25 exiting  .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 19:07:21,280 [INFO    ] [ExpMapGenerator] Science tool AG_expmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz']
+2023-02-03 19:07:21,280 [INFO    ] [GasMapGenerator] Science tool called!
+2023-02-03 19:07:21,280 [DEBUG   ] [GasMapGenerator] No products exist yet
+2023-02-03 19:07:21,281 [DEBUG   ] [GasMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0
+2023-02-03 19:07:21,281 [DEBUG   ] [GasMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_gasmapgen.par /tmp/agilepy_tmp/fvspv
+2023-02-03 19:07:21,289 [DEBUG   ] [GasMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.gas.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz']
+2023-02-03 19:07:21,289 [DEBUG   ] [GasMapGenerator] Executing command >>AG_gasmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.gas.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 19:07:21,750 [DEBUG   ] [GasMapGenerator] Science tool stdout:
+
+#################################################################
+###    AG_gasmapgen B25 v1.3.0 - A.C. A.P. A.T. A.B. A.Z.     ###
+#################################################################
+
+
+INPUT PARAMETERS:
+Exposure filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+Output filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.gas.gz
+Diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+High res diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+##################################################################
+###   AG_gasmapgen B25 exiting ............................... ###
+##################################################################
+
+
+
+
+2023-02-03 19:07:21,751 [INFO    ] [GasMapGenerator] Science tool AG_gasmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.gas.gz']
+2023-02-03 19:07:21,751 [INFO    ] [IntMapGenerator] Science tool called!
+2023-02-03 19:07:21,751 [DEBUG   ] [IntMapGenerator] No products exist yet
+2023-02-03 19:07:21,751 [DEBUG   ] [IntMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0
+2023-02-03 19:07:21,751 [DEBUG   ] [IntMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_intmapgen.par /tmp/agilepy_tmp/dianr
+2023-02-03 19:07:21,758 [DEBUG   ] [IntMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.int.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz']
+2023-02-03 19:07:21,758 [DEBUG   ] [IntMapGenerator] Executing command >>AG_intmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.int.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz
+2023-02-03 19:07:21,788 [DEBUG   ] [IntMapGenerator] Science tool stdout:
+
+ 
+ 
+#################################################################
+########## AG_intmapgen B25 v1.2.0 - A.B.               #########
+#################################################################
+ 
+INPUT PARAMETERS:
+ 
+Enter exposure file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.exp.gz
+Enter output file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.int.gz
+Enter counts file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.cts.gz
+ 
+ 
+AG_intmapgen...............................starting
+AG_intmapgen............................... exiting
+
+
+
+#################################################################
+#########   AG_intmapgen B25 ........... exiting ################
+#################################################################
+
+
+
+
+
+2023-02-03 19:07:21,788 [INFO    ] [IntMapGenerator] Science tool AG_intmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX10000_ID01.int.gz']
+2023-02-03 19:07:21,789 [INFO    ] [MapList] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product.maplist4
+2023-02-03 19:07:21,789 [INFO    ] [AGAnalysis] Maplist file created in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335/maps/0/analysis_product.maplist4
+2023-02-03 19:07:21,789 [INFO    ] [AGAnalysis] Took 226.407455 seconds.
+2023-02-03 19:07:21,789 [INFO    ] [AGAnalysis] Removing directory /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-190335
+2023-02-03 19:07:21,789 [INFO    ] [AgilepyLogger] Removing logger...
+TOTAL RUNTIME = 227.884 s.

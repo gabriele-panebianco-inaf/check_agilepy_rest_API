@@ -1,0 +1,6 @@
+! DiffName, Flux, Err, +Err, -Err
+Galactic 1.5855e-07 2.23573 2.17629 0
+Isotropic 7.75788 1.22753 1.27645 -2.56607
+! SrcName, sqrt(TS), L_peak, B_peak, Counts, Err, Flux, Err, Index, Err, Par2, Par2Err, Par3, Par3Err, TypeFun [fitstatus0 fcn0 edm0 nvpar0 nparx0 iter0 fitstatus1 fcn1 edm1 nvpar1 nparx1 iter1]
+2AGLJ2254+1609 5.37671 86.8975 -37.6889 21.6128 6.80342 2.959e-06 9.31455e-07 2.20942 0 0 0 0 0 0 0 219.454 7.84813e-07 2 14 264 0 204.999 7.62168e-07 3 14 264
+2AGLJ2247+1558 0 84.2229 -37.4782 0.450896 0 6.05327e-08 0 2.75651 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

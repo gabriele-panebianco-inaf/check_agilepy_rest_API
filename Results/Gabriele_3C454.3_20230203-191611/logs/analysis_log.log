@@ -1,0 +1,773 @@
+2023-02-03 19:16:11,610 [INFO    ] [AgilepyLogger] File and Console loggers are active. Log file: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/logs/analysis_log.log
+2023-02-03 19:16:11,691 [INFO    ] [SourcesLibrary] Loaded 2 sources. Total sources: 2
+2023-02-03 19:16:11,693 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['flux'] selectionParamsValues: [6.05327e-08]
+2023-02-03 19:16:11,693 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['flux'] selectionParamsValues: [7.50937e-07]
+2023-02-03 19:16:11,693 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2247+1558']
+2023-02-03 19:16:11,693 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2254+1609']
+2023-02-03 19:16:11,694 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2247+1558']
+2023-02-03 19:16:11,694 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2254+1609']
+2023-02-03 19:16:11,701 [DEBUG   ] [AGAnalysis] Map generation => fovradmin 0 fovradmax 60 bincenter 30 emin 100 emax 50000 fileNamePrefix TN596692803.0_TX596865603.0_EN00100_EX50000_ID01 skymapL /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz skymapH /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 19:16:11,702 [INFO    ] [CtsMapGenerator] Science tool called!
+2023-02-03 19:16:11,702 [DEBUG   ] [CtsMapGenerator] No products exist yet
+2023-02-03 19:16:11,702 [DEBUG   ] [CtsMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0
+2023-02-03 19:16:11,702 [DEBUG   ] [CtsMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_ctsmapgen.par /tmp/agilepy_tmp/qaiom
+2023-02-03 19:16:11,715 [DEBUG   ] [CtsMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index', 'None', 40, 0.5, 86.130001, -38.18, 180, 80, 6, 5, 'ARC', 596692803.0, 596865603.0, 100, 50000, 0, 60]
+2023-02-03 19:16:11,716 [DEBUG   ] [CtsMapGenerator] Executing command >>AG_ctsmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index None 40 0.5 86.130001 -38.18 180 80 6 5 ARC 596692803.0 596865603.0 100 50000 0 60
+2023-02-03 19:16:14,883 [DEBUG   ] [CtsMapGenerator] Science tool stdout:
+
+################################################################
+### Task AG_ctsmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.  ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz
+Event file index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index
+Time intervals list: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 86.130001
+Latitude of map center (galactic): -38.18
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Orbital phase code: 6
+Event filter code: 5
+Projection (ARC or AIT): ARC
+Initial time(sec): 596692803
+Final time(sec): 596865603
+Min energy: 100
+Max energy: 50000
+Min off-axis angle (degrees): 0
+Max off-axis angle (degrees): 60
+INTERVALS N=1:
+   596692803.000000 596865603.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT.index
+MakeSelection intervals: 
+596692803.000000 596865603.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT/ag2211151200_2211301200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/EVT/ag2211151200_2211301200_STD1Kal_FM.EVT.gz > /tmp/file6ejiow
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+9066 rows total
+Selection file total: 9066
+Selected 9066 rows.
+fits_get_num_rows 0 rows.
+Reading all 9066 rows
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz
+creating Counts Map....................................
+writing Counts Map with 396 events
+writing header........................................
+
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz
+#################################################################
+###      AG_ctsmapgen5 exiting .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 19:16:14,883 [INFO    ] [CtsMapGenerator] Science tool AG_ctsmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz']
+2023-02-03 19:16:14,883 [INFO    ] [ExpMapGenerator] Science tool called!
+2023-02-03 19:16:14,883 [DEBUG   ] [ExpMapGenerator] No products exist yet
+2023-02-03 19:16:14,884 [DEBUG   ] [ExpMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0
+2023-02-03 19:16:14,884 [DEBUG   ] [ExpMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_expmapgen.par /tmp/agilepy_tmp/dmqpt
+2023-02-03 19:16:14,891 [DEBUG   ] [ExpMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz', 'None', 'None', 'None', 40, 0.5, 86.130001, -38.18, 180, 80, 0.5, 360, 5.0, 6, 'ARC', 4.0, 160, 2.1, 596692803.0, 596865603.0, 100, 50000, 0, 60]
+2023-02-03 19:16:14,892 [DEBUG   ] [ExpMapGenerator] Executing command >>AG_expmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz None None None 40 0.5 86.130001 -38.18 180 80 0.5 360 5.0 6 ARC 4.0 160 2.1 596692803.0 596865603.0 100 50000 0 60
+2023-02-03 19:16:19,018 [DEBUG   ] [ExpMapGenerator] Science tool stdout:
+
+################################################################
+###   AG_expmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.     ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+Grid log index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index
+Effective area file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz
+Energy dispersion file name: None
+Maplist file name: None
+Time intervals file name: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 86.130001
+Latitude of map center (galactic): -38.18
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Boresight movement tolerance (degrees): 0.5
+Roll tolerance (degrees): 360
+Earth tolerance (degrees): 5
+Orbital phase code: 6
+Projection (ARC or AIT): ARC
+Bin step size: 4
+LOG file step size: 160
+Spectral index: 2.1
+Initial time (sec): 596692803
+Final time (sec): 596865603
+Minimum energy: 100
+Maximum energy: 50000
+Min radius of field of view (degrees): 0
+Max radius of field of view (degrees): 60
+INTERVALS N=1:
+   596692803.000000 596865603.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG.index
+MakeSelection intervals: 
+596692803.000000 596865603.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596635132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596635132_STD1Kal.LOG.gz > /tmp/fileZnppi6
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+1550 rows total
+Selection file total: 1550
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596721532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596721532_STD1Kal.LOG.gz > /tmp/fileZnppi6
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4083 rows total
+Selection file total: 5633
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596807932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/4_3C454.3/LOG/ag-596807932_STD1Kal.LOG.gz > /tmp/fileZnppi6
+Log expr: TIME >= 596692803.000000 && TIME < 596865603.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+2614 rows total
+Selection file total: 8247
+Selected 8247 rows.
+mdim: 40 mres: 0.5 mxdim: 80 nmaps: 1
+Dimension of m_aeffgrid: 8 19 14
+Dimension of m_avgValues: 8 19
+MakeGridAverage2: 100 20000
+Beginning interpolation..
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+Created file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+Creating image in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+#################################################################
+###  AG_expmapgen B25 exiting  .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 19:16:19,018 [INFO    ] [ExpMapGenerator] Science tool AG_expmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz']
+2023-02-03 19:16:19,019 [INFO    ] [GasMapGenerator] Science tool called!
+2023-02-03 19:16:19,019 [DEBUG   ] [GasMapGenerator] No products exist yet
+2023-02-03 19:16:19,019 [DEBUG   ] [GasMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0
+2023-02-03 19:16:19,019 [DEBUG   ] [GasMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_gasmapgen.par /tmp/agilepy_tmp/ucdku
+2023-02-03 19:16:19,028 [DEBUG   ] [GasMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.gas.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz']
+2023-02-03 19:16:19,028 [DEBUG   ] [GasMapGenerator] Executing command >>AG_gasmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.gas.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 19:16:19,485 [DEBUG   ] [GasMapGenerator] Science tool stdout:
+
+#################################################################
+###    AG_gasmapgen B25 v1.3.0 - A.C. A.P. A.T. A.B. A.Z.     ###
+#################################################################
+
+
+INPUT PARAMETERS:
+Exposure filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+Output filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.gas.gz
+Diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+High res diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+##################################################################
+###   AG_gasmapgen B25 exiting ............................... ###
+##################################################################
+
+
+
+
+2023-02-03 19:16:19,485 [INFO    ] [GasMapGenerator] Science tool AG_gasmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.gas.gz']
+2023-02-03 19:16:19,486 [INFO    ] [IntMapGenerator] Science tool called!
+2023-02-03 19:16:19,486 [DEBUG   ] [IntMapGenerator] No products exist yet
+2023-02-03 19:16:19,486 [DEBUG   ] [IntMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0
+2023-02-03 19:16:19,486 [DEBUG   ] [IntMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_intmapgen.par /tmp/agilepy_tmp/ddpdr
+2023-02-03 19:16:19,494 [DEBUG   ] [IntMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.int.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz']
+2023-02-03 19:16:19,494 [DEBUG   ] [IntMapGenerator] Executing command >>AG_intmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.int.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz
+2023-02-03 19:16:19,540 [DEBUG   ] [IntMapGenerator] Science tool stdout:
+
+ 
+ 
+#################################################################
+########## AG_intmapgen B25 v1.2.0 - A.B.               #########
+#################################################################
+ 
+INPUT PARAMETERS:
+ 
+Enter exposure file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz
+Enter output file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.int.gz
+Enter counts file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.gz
+ 
+ 
+AG_intmapgen...............................starting
+AG_intmapgen............................... exiting
+
+
+
+#################################################################
+#########   AG_intmapgen B25 ........... exiting ################
+#################################################################
+
+
+
+
+
+2023-02-03 19:16:19,541 [INFO    ] [IntMapGenerator] Science tool AG_intmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.int.gz']
+2023-02-03 19:16:19,542 [INFO    ] [MapList] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product.maplist4
+2023-02-03 19:16:19,542 [INFO    ] [AGAnalysis] Maplist file created in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product.maplist4
+2023-02-03 19:16:19,542 [INFO    ] [AGAnalysis] Took 7.848271 seconds.
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] the parameters are multiL=None, multiB=None, multiLPeak=None, multiBPeak=None, startL=84.2229, startB=-37.4782 
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] ellipse values not available, I got peak values
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] ellipse and peak values not available, I got initial values
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] the parameters are multiL=None, multiB=None, multiLPeak=None, multiBPeak=None, startL=86.1236, startB=-38.1824 
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] ellipse values not available, I got peak values
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] ellipse and peak values not available, I got initial values
+2023-02-03 19:16:19,543 [INFO    ] [SourcesLibrary] File /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/sourceLibrary00000.txt has been produced
+2023-02-03 19:16:19,543 [INFO    ] [Multi] Science tool called!
+2023-02-03 19:16:19,543 [DEBUG   ] [Multi] No products exist yet
+2023-02-03 19:16:19,543 [DEBUG   ] [Multi] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0
+2023-02-03 19:16:19,543 [DEBUG   ] [Multi] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_multi.par /tmp/agilepy_tmp/uqkle
+2023-02-03 19:16:19,560 [DEBUG   ] [Multi] args: [PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product.maplist4'), '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.edp.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.psd.gz', 10, 1, 1, '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/sourceLibrary00000.txt', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product', 2, 5.99147, 0, 0, 0, 0, 1, 0, 'Minuit', 'Migrad', 2, 0.01, 1, 1, 0, 15, 10, 40]
+2023-02-03 19:16:19,560 [DEBUG   ] [Multi] Executing command >>AG_multi /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product.maplist4 /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.edp.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.psd.gz 10 1 1 /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/sourceLibrary00000.txt /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product 2 5.99147 0 0 0 0 1 0 Minuit Migrad 2 0.01 1 1 0 15 10 40
+2023-02-03 19:16:21,063 [DEBUG   ] [Multi] Science tool stdout:
+
+#################################################################
+####    AG_Multi B25 v6.0.0 - A.C. T.C. A.T. A.B            #####
+#################################################################
+
+
+INPUT PARAMETERS:
+
+Map file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product.maplist4
+SAR file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz
+EDP file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.edp.gz
+PSD file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.psd.gz
+Radius of analysis: 10
+Galactic parameter mode: 1
+Isotropic parameter mode: 1
+Sources list: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/sourceLibrary00000.txt
+Output file name prefix: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product
+Upper limit confidence level: 2
+Location contour confidence level: 5.99147
+Diffuse emission optimisation for Loop2: 0
+Diffuse emission optimisation for Loop2 - fit: 0
+Isotropic emission optimisation for Loop2: 0
+Isotropic emission optimisation for Loop2 - fit: 0
+EDP correction: 1
+Flux calculation correction for spectral shape 1=output, 2=input and output: 0
+Minimizer type: Minuit
+Minimizer algorithm: Migrad
+Minimizer default strategy: 2
+Minimizer default tolerance: 0.01
+Integrator type (1-8): 1
+Enable exp-ratio evaluation. 1 (for 'yes') or 0 (for no): 1
+The lower bound for the threshold level in exp-ratio evaluation: 0
+The upper bound for the threshold level in exp-ratio evaluation: 15
+The edge degree dimension of the exp-ratio evaluation area: 10
+Number of points to determine the contour (0-400): 40
+
+Using a single map set
+Dimension of m_aeffgrid: 8 19 14
+dimension of m_psfgrid 8 19 14 4 200
+Dimension of m_edpgrid: 8 19 14 14
+Total CTS = 396
+Total EXP = 45.814
+Gasmap 1 /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.gas.gz index = 2
+Isomap 1 /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/maps/0/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.gz index = 2
+Total GAL = 34.343
+## Set integrator type: 1
+## Set minimizer user type: Minuit Migrad 2
+### 6.05327e-08 84.2229 -37.4782 2.75651 0 2 2AGLJ2247+1558 0 0 0 0 0.5 5.0 20 10000 0 100
+#### 0 0.5 5 20 10000 0 100
+### 7.50937e-07 86.1236 -38.1824 2.20942 3 2 2AGLJ2254+1609 0 0 0 0 0.5 5.0 20 10000 0 100
+#### 0 0.5 5 20 10000 0 100
+           Minimizer Type :          Minuit
+      Minimizer Algorithm :          Migrad
+                 Strategy :               2
+                Tolerance :            0.01
+           Max func calls :               0
+           Max iterations :               0
+           Func Precision :              -1
+         Error definition :               1
+              Print Level :               0
+
+Sources [name sqrt(minTS) flux index position(l, b) typefun par2 par3]
+1 2AGLJ2254+1609 2 7.50937e-07 free 2.20942 fixed (86.1236, -38.1824) free 0 PowerLaw(1 - index) 0 fixed 0 fixed 
+2 2AGLJ2247+1558 2 6.05327e-08 fixed 2.75651 fixed (84.2229, -37.4782) fixed 0 PowerLaw(1 - index) 0 fixed 0 fixed 
+Total SRC = 0.994112
+Total SRC = 0.998746
+
+Flux factor: 1e+06; upper bound: 1e+07
+
+Parameters
+1 - Galactic: 1 free
+2 - Isotropic: 1 free
+3 - 2AGLJ2254+1609_f: 7.50937e-07 free
+4 - 2AGLJ2254+1609_x: 2.20942 fixed
+5 - 2AGLJ2254+1609_l: 86.1236 free
+6 - 2AGLJ2254+1609_b: -38.1824 free
+7 - 2AGLJ2254+1609_2: 0 fixed
+8 - 2AGLJ2254+1609_3: 0 fixed
+9 - 2AGLJ2247+1558_f: 6.05327e-08 fixed
+10 - 2AGLJ2247+1558_x: 2.75651 fixed
+11 - 2AGLJ2247+1558_l: 84.2229 fixed
+12 - 2AGLJ2247+1558_b: -37.4782 fixed
+13 - 2AGLJ2247+1558_2: 0 fixed
+14 - 2AGLJ2247+1558_3: 0 fixed
+
+Total CNT = 0.994112
+Total CNT = 0.998746
+Begin first loop
+
+Considering source 1: 2AGLJ2254+1609
+##AB: Move
+Total CTS IN MOVE = 396
+##AB: FixDistantSources
+##AB: FitPositionIndex
+
+S1: Source 1: 2AGLJ2254+1609: Flux free, position and index fixed 
+### pre-fitting parameters
+Total CNT = 0.994112, NormFactor = 1, GetExp() = 7.33869e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LN
+-
+ FCN=215.573 FROM MIGRAD    STATUS=CONVERGED     144 CALLS         145 TOTAL
+                     EDM=9.8596e-09    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     2.71881e-09   2.62610e+00   3.29943e-03** at limit **
+   2  Isotropic    8.28341e+00   1.26590e+00   4.34347e-04   9.45082e-04
+   3  2AGLJ2254+1609_f   2.93784e+00   9.48833e-01   1.65540e-06   5.77039e-01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.61236e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.81824e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 146 iteration. Result=0
+S2: Source 1: 2AGLJ2254+1609: Flux=0 
+### pre-fitting parameters
+Total CNT = 0.994112, NormFactor = 1, GetExp() = 7.33869e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 (nullified)
+FIT HISTO LN
+ FCN=227.234 FROM MIGRAD    STATUS=CONVERGED      71 CALLS          72 TOTAL
+                     EDM=1.17312e-10    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     5.95302e-11   1.36381e+01   7.80387e-03** at limit **
+   2  Isotropic    1.10511e+01   1.27188e+00   4.19084e-04   2.55509e-04
+   3  2AGLJ2254+1609_f   0.00000e+00     fixed    
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.61236e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.81824e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 73 iteration. Result=0
+sqrt(TS) = 4.82928
+
+amin1=215.573, amin0=227.234, L1=283.346, L0=295.007
+S3: Source 1: 2AGLJ2254+1609: Flux free, Position free
+Trying position (86.1236, -38.1824)
+### pre-fitting parameters
+Total CNT = 0.994112, NormFactor = 1, GetExp() = 7.33869e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux Position free
+FIT HISTO LN
+\
+|
+ FCN=213.661 FROM MIGRAD    STATUS=CONVERGED     252 CALLS         253 TOTAL
+                     EDM=1.6091e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.43327e-08   2.61184e+00   3.29343e-03** at limit **
+   2  Isotropic    8.39433e+00   1.25246e+00   4.29569e-04  -3.20957e-03
+   3  2AGLJ2254+1609_f   2.81364e+00   9.07977e-01   1.62565e-06  -2.98144e-01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.69011e+01   1.93782e-01   1.92676e-03  -4.83057e-03
+   6  2AGLJ2254+1609_b  -3.76847e+01   1.50232e-01   1.50935e-03   5.30038e-03
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 254 iteration. Result=0
+Source 1 changes: 136 times the position
+Fit result = 0
+S4: Source 1: 2AGLJ2254+1609 best position found in (l,b) = (86.9011,-37.6847)
+S5: Source 1: 2AGLJ2254+1609: Flux free, position fixed
+### pre-fitting parameters
+Total CNT = 0.996325, NormFactor = 1, GetExp() = 7.2891e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LN
+ FCN=213.661 FROM MIGRAD    STATUS=CONVERGED      64 CALLS          65 TOTAL
+                     EDM=8.79132e-09    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.66983e-08   2.60989e+00   3.24548e-03** at limit **
+   2  Isotropic    8.39452e+00   1.25093e+00   4.29624e-04   3.55010e-04
+   3  2AGLJ2254+1609_f   2.83274e+00   9.11695e-01   1.63123e-06  -2.47378e-01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.69011e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.76847e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 66 iteration. Result=0
+S6: Source 1: 2AGLJ2254+1609: Flux=0, position fixed
+### pre-fitting parameters
+Total CNT = 0.996325, NormFactor = 1, GetExp() = 7.2891e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 (nullified)
+FIT HISTO LN
+/
+ FCN=227.234 FROM MIGRAD    STATUS=CONVERGED     102 CALLS         103 TOTAL
+                     EDM=6.85736e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     9.94992e-07   1.36545e+01   7.64736e-03** at limit **
+   2  Isotropic    1.10511e+01   1.27261e+00   4.19111e-04   7.96948e-04
+   3  2AGLJ2254+1609_f   0.00000e+00     fixed    
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.69011e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.76847e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 104 iteration. Result=0
+sqrt(TS) = 5.21017
+Skipping source 2: 2AGLJ2247+1558
+
+Begin second loop
+
+gal0:
+ 9.94992e-07
+ 1
+
+gal1:
+ 1.66983e-08
+ 1
+
+iso0:
+ 11.0511
+ 1
+
+iso1:
+ 8.39452
+ 1
+
+
+Considering source 1: 2AGLJ2254+1609
+Total CTS IN MOVE = 396
+
+Source 1: 2AGLJ2254+1609: Flux=0, position fixed
+### pre-fitting parameters
+Total CNT = 0.996325, NormFactor = 1, GetExp() = 7.2891e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 (nullified)
+FIT HISTO LNE
+ 
+ 
+ FCN=219.454 FROM MINOS     STATUS=SUCCESSFUL    101 CALLS         262 TOTAL
+                     EDM=7.84813e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.83150e-06   1.01502e+01   1.85484e-02** at limit **
+   2  Isotropic    1.05616e+01   1.23777e+00   1.23777e+00  -1.76679e-05
+   3  2AGLJ2254+1609_f   0.00000e+00     fixed    
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.69011e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.76847e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 263 iteration. Result=0
+
+Source 1: 2AGLJ2254+1609: Flux free, position fixed
+### pre-fitting parameters
+Total CNT = 0.996325, NormFactor = 1, GetExp() = 7.2891e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LNE
+-
+\
+|
+ FCN=205 FROM MINOS     STATUS=SUCCESSFUL     51 CALLS         323 TOTAL
+                     EDM=1.64449e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.38962e-08   2.23662e+00   1.63228e-06** at limit **
+   2  Isotropic    7.76037e+00   1.22757e+00   1.26293e-04   1.05048e-04
+   3  2AGLJ2254+1609_f   2.96207e+00   9.32934e-01   9.32934e-01   5.50573e-01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.69011e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.76847e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 324 iteration. Result=0
+sqrt(TS) = 5.37663
+
+amin0=219.454, amin1=205, L0=283.227, L1=268.773
+#### Source# 0 3 28.9081 force 0
+
+Source 1: 2AGLJ2254+1609: Flux and position free, Errordef = 5.99147
+### pre-fitting parameters
+Total CNT = 0.996325, NormFactor = 1, GetExp() = 7.2891e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux Position free
+FIT HISTO LNE
+/
+ 
+ 
+-
+\
+|
+/
+ 
+ 
+-
+\
+|
+/
+ 
+ 
+-
+\
+|
+/
+ FCN=204.999 FROM MINOS     STATUS=SUCCESSFUL    226 CALLS        1937 TOTAL
+                     EDM=2.02097e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.27288e-08   1.29224e+01   7.82568e-08** at limit **
+   2  Isotropic    7.75772e+00   3.00619e+00   7.76023e-05  -5.48716e-03
+   3  2AGLJ2254+1609_f   2.96442e+00   2.29657e+00  -1.12107e-06  -1.86474e+01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.68975e+01   5.30971e-01  -1.14144e-02   8.01215e-05
+   6  2AGLJ2254+1609_b  -3.76889e+01   4.29492e-01   4.29492e-01   1.30734e-02
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 2.99573
+Fitting done in 1938 iteration. Result=0
+Source 1 changes: 1167 times the position
+Fit result = 0
+Finding contour for source 1
+ 
+ 
+-
+\
+|
+/
+ 
+ 
+-
+\
+Done in 1048 iterations
+2AGLJ2254+1609: Finding the best ellipse
+ FCN=0.0389463 FROM MINOS     STATUS=PROBLEMS       74 CALLS         452 TOTAL
+                     EDM=1.45482e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Axis 1       7.41820e-01   3.51047e-01   8.30131e-03  -3.49017e-04
+   2  Axis 2       5.73300e-01   2.94287e-01   5.35333e-03  -1.40973e-03
+   3  Angle        6.42942e-01   1.01485e+00   1.01485e+00  -1.29646e-03
+                               ERR DEF= 2.99573
+
+Source 1: 2AGLJ2254+1609: Flux free, position fixed, Errordef = 1
+### pre-fitting parameters
+Total CNT = 0.998627, NormFactor = 1, GetExp() = 7.30409e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LNE
+|
+/
+ 
+ FCN=204.999 FROM MINOS     STATUS=SUCCESSFUL     51 CALLS         318 TOTAL
+                     EDM=7.62168e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.58550e-07   2.23573e+00  -2.11764e-05** at limit **
+   2  Isotropic    7.75788e+00   1.22753e+00   1.26398e-04   1.04971e-04
+   3  2AGLJ2254+1609_f   2.95900e+00   9.31455e-01   9.31455e-01   5.51810e-01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.68975e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.76889e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 319 iteration. Result=0
+Source 1 changes: 1 times the position
+sqrt(TS) = 5.37671
+## SET 268.772
+Source 1: 2AGLJ2254+1609: Finding upper level
+### pre-fitting parameters
+Total CNT = 0.996305, NormFactor = 1, GetExp() = 7.30409e+06, m_fluxScaleFactor = 1e+06
+Total CNT = 0.998746, NormFactor = 1, GetExp() = 7.44879e+06, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LONE
+ 
+-
+\
+ FCN=204.999 FROM MINOS     STATUS=SUCCESSFUL     79 CALLS         372 TOTAL
+                     EDM=6.75936e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.12149e-08   8.75745e+00  -6.93392e-05** at limit **
+   2  Isotropic    7.75787e+00   2.45245e+00   2.68829e-04  -9.97557e-05
+   3  2AGLJ2254+1609_f   2.95808e+00   1.86264e+00   1.86264e+00  -1.50290e+01
+   4  2AGLJ2254+1609_x   2.20942e+00     fixed    
+   5  2AGLJ2254+1609_l   8.68975e+01     fixed    
+   6  2AGLJ2254+1609_b  -3.76889e+01     fixed    
+   7  2AGLJ2254+1609_2   0.00000e+00     fixed    
+   8  2AGLJ2254+1609_3   0.00000e+00     fixed    
+   9  2AGLJ2247+1558_f   6.05327e-02     fixed    
+  10  2AGLJ2247+1558_x   2.75651e+00     fixed    
+  11  2AGLJ2247+1558_l   8.42229e+01     fixed    
+  12  2AGLJ2247+1558_b  -3.74782e+01     fixed    
+  13  2AGLJ2247+1558_2   0.00000e+00     fixed    
+  14  2AGLJ2247+1558_3   0.00000e+00     fixed    
+                               ERR DEF= 2
+Fitting done in 373 iteration. Result=0
+Skipping source 2: 2AGLJ2247+1558
+
+End of fitting.
+
+Diffuse parameters tables
+Values around each source, with(1) or without(0) it
+Coefficients
+Source               gal1      gal0      iso1      iso0
+2AGLJ2254+1609 1.5855e-071.8315e-06   7.75788   10.5616
+Errors
+Source               gal1      gal0      iso1      iso0
+2AGLJ2254+1609    2.23573   10.1502  0.352908 0.0109721
+Bayes confidence level 2 alpha 0.045 and psf 4 for emin 100
+NOFF: 0.00238567
+EXCESS: 20.9976
+sigma: 4.58284
+diff: 20.9976
+quot: 2
+UL CTS: 29.003
+UL flux: 3.97895e-06
+helene   3.97895e-06
+
+**ExpRatioEvaluator - started!
+*Normalizing image... 
+ - Computing normalization factors matrix..
+ - Computing normalization factors matrix completed!
+*Normalization completed!
+Deleting normalizedImage..
+Bayes confidence level 2 alpha 0.045 and psf 4 for emin 100
+NOFF: 22.6864
+EXCESS: -1.68637
+sigma: 6.60957
+diff: 1.68637
+quot: 0.798614
+UL CTS: 12.1946
+UL flux: 1.63712e-06
+helene   1.63712e-06
+
+**ExpRatioEvaluator - started!
+*Normalizing image... 
+ - Computing normalization factors matrix..
+ - Computing normalization factors matrix completed!
+*Normalization completed!
+Deleting normalizedImage..
+
+**ExpRatioEvaluator - started!
+*Normalizing image... 
+ - Computing normalization factors matrix..
+ - Computing normalization factors matrix completed!
+*Normalization completed!
+Deleting normalizedImage..
+
+**ExpRatioEvaluator - started!
+*Normalizing image... 
+ - Computing normalization factors matrix..
+ - Computing normalization factors matrix completed!
+*Normalization completed!
+Deleting normalizedImage..
+#################################################################
+##########       AG_Multi B25........ exiting ###################
+#################################################################
+
+
+
+2023-02-03 19:16:21,064 [INFO    ] [Multi] Science tool AG_multi produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product_2AGLJ2247+1558.source', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product_2AGLJ2254+1609.source', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product.html', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product.log']
+2023-02-03 19:16:21,065 [INFO    ] [AGAnalysis] AG_multi produced: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product_2AGLJ2247+1558.source', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product_2AGLJ2254+1609.source']
+2023-02-03 19:16:21,065 [DEBUG   ] [SourcesLibrary] Parsing output file of AG_multi: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product_2AGLJ2247+1558.source
+2023-02-03 19:16:21,066 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2247+1558']
+2023-02-03 19:16:21,066 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2254+1609']
+2023-02-03 19:16:21,066 [DEBUG   ] [SourcesLibrary] Parsing output file of AG_multi: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/mle/0/analysis_product_2AGLJ2254+1609.source
+2023-02-03 19:16:21,067 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2247+1558']
+2023-02-03 19:16:21,067 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ2254+1609']
+2023-02-03 19:16:21,067 [INFO    ] [AGAnalysis] Took 1.524592 seconds.
+2023-02-03 19:16:21,067 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['sqrtTS'] selectionParamsValues: [0]
+2023-02-03 19:16:21,067 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['sqrtTS'] selectionParamsValues: [5.37671]
+2023-02-03 19:16:21,067 [INFO    ] [SourcesLibrary] L=B=a=b=phi=-1 for 2AGLJ2247+1558, using LPeak and BPeak..
+2023-02-03 19:16:21,067 [INFO    ] [SourcesLibrary] File /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/sources_library/source_regions.reg has been produced
+2023-02-03 19:16:21,068 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 19:16:21,068 [INFO    ] [PlottingUtils] The region catalog /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/catalogs/2AGL_2.reg will be loaded.
+2023-02-03 19:16:22,219 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/plots/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.cts.png
+2023-02-03 19:16:22,220 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 19:16:22,520 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/plots/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.exp.png
+2023-02-03 19:16:22,520 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 19:16:22,848 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/plots/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.gas.png
+2023-02-03 19:16:22,849 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 19:16:22,849 [INFO    ] [PlottingUtils] The region catalog /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/sources_library/source_regions.reg will be loaded.
+2023-02-03 19:16:22,849 [INFO    ] [PlottingUtils] The region catalog /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/catalogs/2AGL_2.reg will be loaded.
+2023-02-03 19:16:23,886 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_3C454.3_20230203-191611/plots/analysis_product_TN596692803.0_TX596865603.0_EN00100_EX50000_ID01.int.png
