@@ -38,22 +38,26 @@ def make_directory(path):
 
 if __name__=="__main__":
     
-    # Set the path of the Directories and files to use.
-    CurrentDirectory = pathlib.Path(__file__).absolute().parent
-    DataFilePath = CurrentDirectory.joinpath(f"DataFiles/")
-    ConfFileDire = CurrentDirectory.joinpath(f"ConfigurationFiles")
-    make_directory(DataFilePath)
-    make_directory(ConfFileDire)
-    TargetsFile = CurrentDirectory.joinpath("Targets.yml")
-
     # Argument
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--target", help="Number of the target source", type=int)
     args = parser.parse_args()
-
+    
+    # Set the path of the Directories and files to use.
+    CurrentDirectory = pathlib.Path(__file__).absolute().parent
+    TargetsFile = CurrentDirectory.joinpath("Targets.yml")
+    
+    # Make Directory to store the Agilepy Configuration Files
+    ConfFileDire = CurrentDirectory.joinpath(f"ConfigurationFiles")
+    make_directory(ConfFileDire)
+    
     # Get Target Name
     Target = GetTarget(TargetsFile, args.target)
     ConfFilePath = ConfFileDire.joinpath(f"AgilepyConf_{Target['SourceName']}.yml")
+    
+    # Make Directory to store Downloaded Data
+    DataFilePath = CurrentDirectory.joinpath(f"DataFiles/{Target['SourceName']}")
+    make_directory(DataFilePath)
     
     # Write the Configuration YAML file
     AGAnalysis.getConfiguration(
