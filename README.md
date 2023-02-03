@@ -19,14 +19,20 @@ It can be run as
     Data are downloaded in [DataFiles](./DataFiles/), though the `.gz` fits files are ignored in this repository to keep it light.
 Download is performed when calling `AGAnalysis.generateMaps()`.
 
+- Logs of program executions are stored in [Logs](./Logs/).
+
 **Summary results on each analysis target**
 
 0. Try requesting Vela: 2022-04-01 - 2022-12-31.
     - Error: Maximum Download period allowed: 3 months.
 1. Try requesting Vela inside restricted period: 2022-03-10 - 2022-03-20.
-    - Error: No Data Found.
+    - Error: No Data Found, as expected.
 2. Try requesting Vela across restricted period: 2022-03-20 - 2022-04-10.
-    - Data Downloaded.
+    - Data Downloaded only in the non-restricted period, as expected.
+    EVT files were downloaded in OBT 575812732.0 - 577108732.0, see [EVT.index](./DataFiles/2_Vela_across_restricted_period/EVT.index), i.e. 2022-03-31 11:58:52.0 - 2022-04-15 11:58:52.0.
+    LOG files were downloaded in OBT 575812732.0 - 576676731.9, see [LOG.index](./DataFiles/2_Vela_across_restricted_period/LOG.index), i.e. 2022-03-31 11:58:52.0 - 2022-04-10 11:58:51.9.
 3. Try requesting Vela: 2022-04-01 - 2022-06-30.
-    - Data Downloaded correctly.
+    - Data Downloaded, as expected.
+    EVT files were downloaded in OBT 575812732.0 - 583675132.0, see [EVT.index](./DataFiles/3_Vela/EVT.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:52.0.
+    LOG files were downloaded in OBT 575812732.0 - 583675131.9, see [LOG.index](./DataFiles/3_Vela/LOG.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:51.9.
 - Try one or more ATels.

@@ -1,0 +1,326 @@
+(agilepy-1.6.3) gabriele@phd-VM:~/Documents/agile/check_agilepy_rest_API$ python DownloadData.py -t 2
+Configuration File: /home/gabriele/Documents/agile/check_agilepy_rest_API/ConfigurationFiles/AgilepyConf_Vela_across_restricted_period.yml
+2023-02-03 11:59:53,394 [INFO    ] [AgilepyLogger] File and Console loggers are active. Log file: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/logs/analysis_log.log
+2023-02-03 11:59:53,395 [DEBUG   ] [AGDataset] opening coverage file at /home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/utils/AGILE_datacoverage
+2023-02-03 11:59:53,395 [INFO    ] [AGDataset] AGILE data coverage from 2007-12-01T12:00:00 to 2022-12-31T12:00:00
+2023-02-03 11:59:53,396 [INFO    ] [AGDataset] check coverage OK!
+2023-02-03 11:59:53,397 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.qfile does not exists
+2023-02-03 11:59:53,397 [INFO    ] [AGDataset] EVT data in interval 59658.0 59679.0 is missing!
+2023-02-03 11:59:53,397 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.qfile does not exists
+2023-02-03 11:59:53,397 [INFO    ] [AGDataset] LOG data in interval 59658.0 59679.0 is missing!
+2023-02-03 11:59:53,397 [INFO    ] [AGDataset] Downloading data from ssdc..
+2023-02-03 11:59:53,397 [INFO    ] [AGRest] Downloading filelist to download (59658.0,59679.0) (2022-03-20T00:00:00.000, 2022-04-10T00:00:00.000) from https://tools.ssdc.asi.it/AgileData/rest/GRIDList/2022-03-20T00:00:00.000/2022-04-10T00:00:00.000..
+2023-02-03 11:59:53,584 [INFO    ] [AGRest] Took 0.18637895584106445 seconds
+2023-02-03 11:59:53,585 [INFO    ] [AGRest] Downloading data (59658.0,59679.0) from https://tools.ssdc.asi.it/AgileData/rest/GRIDFiles/2022-03-20T00:00:00.000/2022-04-10T00:00:00.000..
+99it [01:11,  1.39it/s]
+2023-02-03 12:01:04,945 [INFO    ] [AGRest] Took 71.35987377166748 seconds. Downloaded 1033000960 bytes.
+2023-02-03 12:01:04,946 [INFO    ] [AGDataset] Extracting data from the tarball..
+2023-02-03 12:01:04,946 [DEBUG   ] [AGDataset] Extracting data from /tmp/agile_078f7b1e-d1ad-48e8-9dfb-1cbf2876130a.tar.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period
+  0%|                                                                                                     | 0/11 [00:00<?, ?it/s]2023-02-03 12:01:04,948 [DEBUG   ] [AGDataset] tmpFilePath.name is ag2203311200_2204151200_STD1Kal_FM.EVT.gz
+2023-02-03 12:01:05,315 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/ag2203311200_2204151200_STD1Kal_FM.EVT.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT/ag2203311200_2204151200_STD1Kal_FM.EVT.gz.
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 29.87it/s]
+2023-02-03 12:01:05,316 [DEBUG   ] [AGDataset] Extracted 1 EVT files. Took 0.36875176429748535 seconds.
+2023-02-03 12:01:05,316 [DEBUG   ] [AGDataset] Removing /tmp/agile_078f7b1e-d1ad-48e8-9dfb-1cbf2876130a.tar.gz file.
+2023-02-03 12:01:05,316 [DEBUG   ] [AGDataset] Extracted files: ['std/2203311200_2204151200-407623/ag2203311200_2204151200_STD1Kal_FM.EVT.gz']
+2023-02-03 12:01:05,341 [DEBUG   ] [AGDataset] pathtoindex is /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index
+2023-02-03 12:01:05,341 [INFO    ] [Indexgen] Science tool called!
+2023-02-03 12:01:05,342 [DEBUG   ] [Indexgen] No products exist yet
+2023-02-03 12:01:05,342 [DEBUG   ] [Indexgen] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period
+2023-02-03 12:01:05,342 [DEBUG   ] [Indexgen] args: [PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT'), 'EVT', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index']
+2023-02-03 12:01:05,342 [DEBUG   ] [Indexgen] Executing command >>AG_indexgen /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT EVT /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index
+2023-02-03 12:01:05,359 [DEBUG   ] [Indexgen] Science tool stdout:
+
+
+
+
+2023-02-03 12:01:05,360 [INFO    ] [Indexgen] Science tool AG_indexgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index']
+2023-02-03 12:01:05,360 [INFO    ] [AGDataset] indexfile at ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index']
+2023-02-03 12:01:05,360 [DEBUG   ] [AGDataset] Extracting data from /tmp/agile_078f7b1e-d1ad-48e8-9dfb-1cbf2876130a.tar.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period
+  0%|                                                                                                     | 0/11 [00:00<?, ?it/s]2023-02-03 12:01:05,362 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-575812732_STD1Kal.LOG.gz
+2023-02-03 12:01:05,558 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-575812732_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575812732_STD1Kal.LOG.gz.
+  9%|████████▍                                                                                    | 1/11 [00:00<00:01,  5.08it/s]2023-02-03 12:01:05,559 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-575899132_STD1Kal.LOG.gz
+2023-02-03 12:01:05,778 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-575899132_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575899132_STD1Kal.LOG.gz.
+ 18%|████████████████▉                                                                            | 2/11 [00:00<00:01,  4.75it/s]2023-02-03 12:01:05,779 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-575985532_STD1Kal.LOG.gz
+2023-02-03 12:01:06,002 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-575985532_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575985532_STD1Kal.LOG.gz.
+ 27%|█████████████████████████▎                                                                   | 3/11 [00:00<00:01,  4.62it/s]2023-02-03 12:01:06,003 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576071932_STD1Kal.LOG.gz
+2023-02-03 12:01:06,257 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576071932_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576071932_STD1Kal.LOG.gz.
+ 36%|█████████████████████████████████▊                                                           | 4/11 [00:00<00:01,  4.32it/s]2023-02-03 12:01:06,258 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576158332_STD1Kal.LOG.gz
+2023-02-03 12:01:06,507 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576158332_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576158332_STD1Kal.LOG.gz.
+ 45%|██████████████████████████████████████████▎                                                  | 5/11 [00:01<00:01,  4.19it/s]2023-02-03 12:01:06,508 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576244732_STD1Kal.LOG.gz
+2023-02-03 12:01:06,728 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576244732_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576244732_STD1Kal.LOG.gz.
+ 55%|██████████████████████████████████████████████████▋                                          | 6/11 [00:01<00:01,  4.30it/s]2023-02-03 12:01:06,728 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576331132_STD1Kal.LOG.gz
+2023-02-03 12:01:06,946 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576331132_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576331132_STD1Kal.LOG.gz.
+ 64%|███████████████████████████████████████████████████████████▏                                 | 7/11 [00:01<00:00,  4.40it/s]2023-02-03 12:01:06,946 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576417532_STD1Kal.LOG.gz
+2023-02-03 12:01:07,167 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576417532_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576417532_STD1Kal.LOG.gz.
+ 73%|███████████████████████████████████████████████████████████████████▋                         | 8/11 [00:01<00:00,  4.43it/s]2023-02-03 12:01:07,167 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576503932_STD1Kal.LOG.gz
+2023-02-03 12:01:07,393 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576503932_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576503932_STD1Kal.LOG.gz.
+ 82%|████████████████████████████████████████████████████████████████████████████                 | 9/11 [00:02<00:00,  4.43it/s]2023-02-03 12:01:07,393 [DEBUG   ] [AGDataset] tmpFilePath.name is ag-576590332_STD1Kal.LOG.gz
+2023-02-03 12:01:07,538 [DEBUG   ] [AGDataset] Moving /tmp/std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576590332_STD1Kal.LOG.gz to /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576590332_STD1Kal.LOG.gz.
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:02<00:00,  5.05it/s]
+2023-02-03 12:01:07,538 [DEBUG   ] [AGDataset] Extracted 10 LOG files. Took 2.176980495452881 seconds.
+2023-02-03 12:01:07,538 [DEBUG   ] [AGDataset] Removing /tmp/agile_078f7b1e-d1ad-48e8-9dfb-1cbf2876130a.tar.gz file.
+2023-02-03 12:01:07,538 [DEBUG   ] [AGDataset] Extracted files: ['std/2203311200_2204151200-407623/STD1Kal_LOG/ag-575812732_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-575899132_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-575985532_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576071932_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576158332_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576244732_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576331132_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576417532_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576503932_STD1Kal.LOG.gz', 'std/2203311200_2204151200-407623/STD1Kal_LOG/ag-576590332_STD1Kal.LOG.gz']
+2023-02-03 12:01:07,543 [DEBUG   ] [AGDataset] pathtoindex is /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index
+2023-02-03 12:01:07,543 [INFO    ] [Indexgen] Science tool called!
+2023-02-03 12:01:07,543 [DEBUG   ] [Indexgen] No products exist yet
+2023-02-03 12:01:07,543 [DEBUG   ] [Indexgen] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period
+2023-02-03 12:01:07,543 [DEBUG   ] [Indexgen] args: [PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG'), 'LOG', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index']
+2023-02-03 12:01:07,543 [DEBUG   ] [Indexgen] Executing command >>AG_indexgen /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG LOG /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index
+2023-02-03 12:01:07,564 [DEBUG   ] [Indexgen] Science tool stdout:
+
+
+
+
+2023-02-03 12:01:07,564 [INFO    ] [Indexgen] Science tool AG_indexgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index']
+2023-02-03 12:01:07,564 [INFO    ] [AGDataset] indexfile at ['/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index']
+Generating maps..please wait.
+Fov bins loop:   0%|          | 0/1 [00:00<?, ?it/s]
+Energy bins loop: 0it [00:00, ?it/s]
+2023-02-03 12:01:07,673 [DEBUG   ] [AGAnalysis] Map generation => fovradmin 0 fovradmax 60 bincenter 30 emin 100 emax 10000 fileNamePrefix TN574819200.0_TX576633600.0_EN00100_EX10000_ID01 skymapL /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz skymapH /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 12:01:07,673 [INFO    ] [CtsMapGenerator] Science tool called!
+2023-02-03 12:01:07,673 [DEBUG   ] [CtsMapGenerator] No products exist yet
+2023-02-03 12:01:07,673 [DEBUG   ] [CtsMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0
+2023-02-03 12:01:07,674 [DEBUG   ] [CtsMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_ctsmapgen.par /tmp/agilepy_tmp/ezabr
+2023-02-03 12:01:07,685 [DEBUG   ] [CtsMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz', PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index'), 'None', 40, 0.5, 263.590001, -2.84, 180, 80, 6, 5, 'ARC', 574819200.0, 576633600.0, 100, 10000, 0, 60]
+2023-02-03 12:01:07,685 [DEBUG   ] [CtsMapGenerator] Executing command >>AG_ctsmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index None 40 0.5 263.590001 -2.84 180 80 6 5 ARC 574819200.0 576633600.0 100 10000 0 60
+2023-02-03 12:01:11,599 [DEBUG   ] [CtsMapGenerator] Science tool stdout:
+
+################################################################
+### Task AG_ctsmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.  ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz
+Event file index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index
+Time intervals list: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 263.590001
+Latitude of map center (galactic): -2.84
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Orbital phase code: 6
+Event filter code: 5
+Projection (ARC or AIT): ARC
+Initial time(sec): 574819200
+Final time(sec): 576633600
+Min energy: 100
+Max energy: 10000
+Min off-axis angle (degrees): 0
+Max off-axis angle (degrees): 60
+INTERVALS N=1:
+   574819200.000000 576633600.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT.index
+MakeSelection intervals: 
+574819200.000000 576633600.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT/ag2203311200_2204151200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/EVT/ag2203311200_2204151200_STD1Kal_FM.EVT.gz > /tmp/fileU6i72a
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && ENERGY >= 100 && ENERGY <= 10000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+48912 rows total
+Selection file total: 48912
+Selected 48912 rows.
+fits_get_num_rows 0 rows.
+Reading all 48912 rows
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz
+creating Counts Map....................................
+writing Counts Map with 2682 events
+writing header........................................
+
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz
+#################################################################
+###      AG_ctsmapgen5 exiting .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 12:01:11,599 [INFO    ] [CtsMapGenerator] Science tool AG_ctsmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz']
+2023-02-03 12:01:11,599 [INFO    ] [ExpMapGenerator] Science tool called!
+2023-02-03 12:01:11,599 [DEBUG   ] [ExpMapGenerator] No products exist yet
+2023-02-03 12:01:11,599 [DEBUG   ] [ExpMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0
+2023-02-03 12:01:11,600 [DEBUG   ] [ExpMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_expmapgen.par /tmp/agilepy_tmp/zfdcn
+2023-02-03 12:01:11,608 [DEBUG   ] [ExpMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz', PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index'), '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz', 'None', 'None', 'None', 40, 0.5, 263.590001, -2.84, 180, 80, 0.5, 360, 5.0, 6, 'ARC', 4.0, 160, 2.1, 574819200.0, 576633600.0, 100, 10000, 0, 60]
+2023-02-03 12:01:11,609 [DEBUG   ] [ExpMapGenerator] Executing command >>AG_expmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz None None None 40 0.5 263.590001 -2.84 180 80 0.5 360 5.0 6 ARC 4.0 160 2.1 574819200.0 576633600.0 100 10000 0 60
+2023-02-03 12:01:25,730 [DEBUG   ] [ExpMapGenerator] Science tool stdout:
+
+################################################################
+###   AG_expmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.     ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+Grid log index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index
+Effective area file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz
+Energy dispersion file name: None
+Maplist file name: None
+Time intervals file name: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 263.590001
+Latitude of map center (galactic): -2.84
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Boresight movement tolerance (degrees): 0.5
+Roll tolerance (degrees): 360
+Earth tolerance (degrees): 5
+Orbital phase code: 6
+Projection (ARC or AIT): ARC
+Bin step size: 4
+LOG file step size: 160
+Spectral index: 2.1
+Initial time (sec): 574819200
+Final time (sec): 576633600
+Minimum energy: 100
+Maximum energy: 10000
+Min radius of field of view (degrees): 0
+Max radius of field of view (degrees): 60
+INTERVALS N=1:
+   574819200.000000 576633600.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG.index
+MakeSelection intervals: 
+574819200.000000 576633600.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575812732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575812732_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4295 rows total
+Selection file total: 4295
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575899132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575899132_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4319 rows total
+Selection file total: 8614
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575985532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-575985532_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4094 rows total
+Selection file total: 12708
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576071932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576071932_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3672 rows total
+Selection file total: 16380
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576158332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576158332_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4315 rows total
+Selection file total: 20695
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576244732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576244732_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4086 rows total
+Selection file total: 24781
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576331132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576331132_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4263 rows total
+Selection file total: 29044
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576417532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576417532_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3832 rows total
+Selection file total: 32876
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576503932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576503932_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4063 rows total
+Selection file total: 36939
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576590332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/2_Vela_across_restricted_period/LOG/ag-576590332_STD1Kal.LOG.gz > /tmp/file6OT1Go
+Log expr: TIME >= 574819200.000000 && TIME < 576633600.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+2094 rows total
+Selection file total: 39033
+Selected 39033 rows.
+mdim: 40 mres: 0.5 mxdim: 80 nmaps: 1
+Dimension of m_aeffgrid: 8 19 14
+Dimension of m_avgValues: 8 19
+MakeGridAverage2: 100 5477
+Beginning interpolation..
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+Created file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+Creating image in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+#################################################################
+###  AG_expmapgen B25 exiting  .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 12:01:25,732 [INFO    ] [ExpMapGenerator] Science tool AG_expmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz']
+2023-02-03 12:01:25,732 [INFO    ] [GasMapGenerator] Science tool called!
+2023-02-03 12:01:25,732 [DEBUG   ] [GasMapGenerator] No products exist yet
+2023-02-03 12:01:25,732 [DEBUG   ] [GasMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0
+2023-02-03 12:01:25,733 [DEBUG   ] [GasMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_gasmapgen.par /tmp/agilepy_tmp/qzxin
+2023-02-03 12:01:25,743 [DEBUG   ] [GasMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.gas.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz']
+2023-02-03 12:01:25,743 [DEBUG   ] [GasMapGenerator] Executing command >>AG_gasmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.gas.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 12:01:26,220 [DEBUG   ] [GasMapGenerator] Science tool stdout:
+
+#################################################################
+###    AG_gasmapgen B25 v1.3.0 - A.C. A.P. A.T. A.B. A.Z.     ###
+#################################################################
+
+
+INPUT PARAMETERS:
+Exposure filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+Output filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.gas.gz
+Diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+High res diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_10000.SKY002.SFMG_H0025.disp.conv.sky.gz
+##################################################################
+###   AG_gasmapgen B25 exiting ............................... ###
+##################################################################
+
+
+
+
+2023-02-03 12:01:26,221 [INFO    ] [GasMapGenerator] Science tool AG_gasmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.gas.gz']
+2023-02-03 12:01:26,221 [INFO    ] [IntMapGenerator] Science tool called!
+2023-02-03 12:01:26,221 [DEBUG   ] [IntMapGenerator] No products exist yet
+2023-02-03 12:01:26,221 [DEBUG   ] [IntMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0
+2023-02-03 12:01:26,221 [DEBUG   ] [IntMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_intmapgen.par /tmp/agilepy_tmp/xqzgf
+2023-02-03 12:01:26,231 [DEBUG   ] [IntMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.int.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz']
+2023-02-03 12:01:26,231 [DEBUG   ] [IntMapGenerator] Executing command >>AG_intmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.int.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz
+2023-02-03 12:01:26,283 [DEBUG   ] [IntMapGenerator] Science tool stdout:
+
+ 
+ 
+#################################################################
+########## AG_intmapgen B25 v1.2.0 - A.B.               #########
+#################################################################
+ 
+INPUT PARAMETERS:
+ 
+Enter exposure file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.exp.gz
+Enter output file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.int.gz
+Enter counts file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.cts.gz
+ 
+ 
+AG_intmapgen...............................starting
+AG_intmapgen............................... exiting
+
+
+
+#################################################################
+#########   AG_intmapgen B25 ........... exiting ################
+#################################################################
+
+
+
+
+
+2023-02-03 12:01:26,283 [INFO    ] [IntMapGenerator] Science tool AG_intmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product_TN574819200.0_TX576633600.0_EN00100_EX10000_ID01.int.gz']
+2023-02-03 12:01:26,284 [INFO    ] [MapList] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product.maplist4
+2023-02-03 12:01:26,284 [INFO    ] [AGAnalysis] Maplist file created in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953/maps/0/analysis_product.maplist4
+2023-02-03 12:01:26,284 [INFO    ] [AGAnalysis] Took 92.888374 seconds.
+2023-02-03 12:01:26,284 [INFO    ] [AGAnalysis] Removing directory /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_across_restricted_period_20230203-115953
+2023-02-03 12:01:26,285 [INFO    ] [AgilepyLogger] Removing logger...
+TOTAL RUNTIME = 94.486 s.
