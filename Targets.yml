@@ -1,0 +1,32 @@
+Target_0:
+  SourceName: 'Vela_Long'
+  TimeType: 'MJD'
+  tmin: 59670 # 2022-04-01 00:00:00 UTC
+  tmax: 59944 # 2022-12-31 00:00:00 UTC
+  glon: 263.59
+  glat: -2.84
+  meta: "Request Vela data for a period of time > 3 months"
+Target_1:
+  SourceName: 'Vela_restricted_period'
+  TimeType: 'MJD'
+  tmin: 59648 # 2022-03-10 00:00:00 UTC
+  tmax: 59658 # 2022-03-20 00:00:00 UTC
+  glon: 263.59
+  glat: -2.84
+  meta: "Request Vela data inside the restricted period"
+Target_2:
+  SourceName: 'Vela_across_restricted_period'
+  TimeType: 'MJD'
+  tmin: 59658 # 2022-03-20 00:00:00 UTC
+  tmax: 59679 # 2022-04-10 00:00:00 UTC
+  glon: 263.59
+  glat: -2.84
+  meta: "Request Vela data across the restricted period"
+Target_3:
+  SourceName: 'Vela'
+  TimeType: 'MJD'
+  tmin: 59670 # 2022-04-01 00:00:00 UTC
+  tmax: 59760 # 2022-06-30 00:00:00 UTC
+  glon: 263.59
+  glat: -2.84
+  meta: "Request Vela data for a period of time < 3 months"

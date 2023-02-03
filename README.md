@@ -1,5 +1,22 @@
-# check_agilepy_rest_API
-Check if agilepy REST API allows to download data.
+# Check if agilepy REST API allows to download data.
+
+**Repository structure**
+- [Targets.yml](./Targets.yml): YAML file with the different targets used for the analysis (target= source position + time intervals requested for download and scientific analysis).
+Every target is associated with a progressive number from `0` onward.
+- [WriteConfFile.py](./WriteConfFile.py): script used to create the Agilepy Configuration files necessary to start an analysis.
+It can be run as
+    ```
+    python WriteConfFile.py -t 0
+    ```
+    Change `0` with the progressive number of the Target you are interested in.
+    Configuration files are wirtten in [ConfigurationFiles](./ConfigurationFiles/).
+- [DownloadData.py](./DownloadData.py): Read the Agilepy Configuration file created for a given target and tries to download the data with the REST API.
+It can be run as
+    ```
+    python DownloadData.py -t 0
+    ```
+    Change `0` with the progressive number of the Target you are interested in.
+    Data are downloaded in [ConfigurationFiles](./DataFiles/), though the `.gz` fits files are ignored in this repository to keep it light.
 
 **Analysis targets chosen and respective codes:**
 0. Try requesting Vela: 2022-04-01 - 2022-12-31.

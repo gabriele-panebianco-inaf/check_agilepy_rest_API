@@ -3,60 +3,47 @@ from agilepy.api.AGAnalysis import AGAnalysis
 import pathlib
 import argparse
 import os
+import yaml
 
-def GetTarget(targetnumber):
+def GetTarget(TargetsFile, TargetNumber):
+    """
+    Read the YAML file with the targets and return the dict of the requested Target,
+    identified by its progressivenumber.
     
-    if targetnumber==0:
-        Target={'SourceName':'Vela_Long',
-                'TimeType':'MJD',
-                'tmin': 59670, # 2022-04-01 00:00:00 UTC
-                'tmax': 59944, # 2022-12-31 00:00:00 UTC
-                'glon': 263.59,
-                'glat': -2.84
-                }
-    elif targetnumber==1:
-        Target={'SourceName':'Vela_restricted_period',
-                'TimeType':'MJD',
-                'tmin': 59648, # 2022-03-10 00:00:00 UTC
-                'tmax': 59658, # 2022-03-20 00:00:00 UTC
-                'glon': 263.59,
-                'glat': -2.84
-                }
-    elif targetnumber==2:
-        Target={'SourceName':'Vela_across_restricted_period',
-                'TimeType':'MJD',
-                'tmin': 59658, # 2022-03-20 00:00:00 UTC
-                'tmax': 59679, # 2022-04-10 00:00:00 UTC
-                'glon': 263.59,
-                'glat': -2.84
-                }
-    elif targetnumber==3:
-        Target={'SourceName':'Vela',
-                'TimeType':'MJD',
-                'tmin': 59670, # 2022-04-01 00:00:00 UTC
-                'tmax': 59760, # 2022-06-30 00:00:00 UTC
-                'glon': 263.59,
-                'glat': -2.84
-                }
-    else:
-        raise ValueError(f"Target number {targetnumber} not valid.")
+    Parameters:
+    TargetsFile : str
+        Path of the file with the Targets and their progressive number.
+    TargetNumber : int
+        Progressive Number of the chosen target.
     
+    Returns
+    -------
+    Target : dict
+        Dictionary with Target information to write the Agilepy Configuration File.
+    """
+    
+    with open(TargetsFile, 'r') as file:
+        Targets = yaml.safe_load(file)
+        
+    Target=Targets[f'Target_{TargetNumber}']
+
     return Target
 
 def make_directory(path):
-    "Create directory if it does not exist"
+    """Create directory if it does not exist"""
     if not os.path.exists(path):
         os.makedirs(path)
     return None
 
 if __name__=="__main__":
     
-    # Set the path of the Directories to use.
+    # Set the path of the Directories and files to use.
     CurrentDirectory = pathlib.Path(__file__).absolute().parent
     DataFilePath = CurrentDirectory.joinpath(f"DataFiles/")
     ConfFileDire = CurrentDirectory.joinpath(f"ConfigurationFiles")
     make_directory(DataFilePath)
     make_directory(ConfFileDire)
+    TargetsFile = CurrentDirectory.joinpath("Targets.yml")
 
     # Argument
     parser = argparse.ArgumentParser()
@@ -64,7 +51,7 @@ if __name__=="__main__":
     args = parser.parse_args()
 
     # Get Target Name
-    Target = GetTarget(args.target)
+    Target = GetTarget(TargetsFile, args.target)
     ConfFilePath = ConfFileDire.joinpath(f"AgilepyConf_{Target['SourceName']}.yml")
     
     # Write the Configuration YAML file
