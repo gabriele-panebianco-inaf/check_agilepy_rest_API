@@ -41,7 +41,7 @@ Logs of program executions are stored in [Logs](./Logs/).
 4. Try replicate ATel https://www.astronomerstelegram.org/?read=15782 on 3C454.3.
     - Data Downloaded as expected, ATel results confirmed, see [Results/Gabriele_3C454.3_20230203-191611/](./Results/Gabriele_3C454.3_20230203-191611/).
 5. Same as case 4, but inside Docker container, not conda environment.
-    - Errors, see below.
+    - It works, with some caveats, see below. Results in see [Results/Gabriele_3C454.3_Docker_20230203-184016/](./Results/Gabriele_3C454.3_Docker_20230203-184016/).
 
 **Extra Notes**
 - All cases were tested inside anaconda environment.
