@@ -1,0 +1,29 @@
+(agilepy-1.6.3) gabriele@phd-VM:~/Documents/agile/check_agilepy_rest_API$ python DownloadData.py -t 0
+Configuration File: /home/gabriele/Documents/agile/check_agilepy_rest_API/ConfigurationFiles/AgilepyConf_Vela_Long.yml
+2023-02-03 11:57:55,121 [INFO    ] [AgilepyLogger] File and Console loggers are active. Log file: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_Long_20230203-115755/logs/analysis_log.log
+2023-02-03 11:57:55,122 [DEBUG   ] [AGDataset] opening coverage file at /home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/utils/AGILE_datacoverage
+2023-02-03 11:57:55,122 [INFO    ] [AGDataset] AGILE data coverage from 2007-12-01T12:00:00 to 2022-12-31T12:00:00
+2023-02-03 11:57:55,122 [INFO    ] [AGDataset] check coverage OK!
+2023-02-03 11:57:55,123 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/0_Vela_Long/EVT.qfile does not exists
+2023-02-03 11:57:55,123 [INFO    ] [AGDataset] EVT data in interval 59670.0 59944.0 is missing!
+2023-02-03 11:57:55,123 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/0_Vela_Long/LOG.qfile does not exists
+2023-02-03 11:57:55,124 [INFO    ] [AGDataset] LOG data in interval 59670.0 59944.0 is missing!
+2023-02-03 11:57:55,124 [INFO    ] [AGDataset] Downloading data from ssdc..
+2023-02-03 11:57:55,124 [INFO    ] [AGRest] Downloading filelist to download (59670.0,59944.0) (2022-04-01T00:00:00.000, 2022-12-31T00:00:00.000) from https://tools.ssdc.asi.it/AgileData/rest/GRIDList/2022-04-01T00:00:00.000/2022-12-31T00:00:00.000..
+2023-02-03 11:57:55,307 [INFO    ] [AGRest] Took 0.1826624870300293 seconds
+2023-02-03 11:57:55,307 [INFO    ] [AGAnalysis] Removing directory /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_Long_20230203-115755
+2023-02-03 11:57:55,307 [INFO    ] [AgilepyLogger] Removing logger...
+Traceback (most recent call last):
+  File "DownloadData.py", line 79, in <module>
+    RunDownloadData(ConfFilePath)
+  File "DownloadData.py", line 58, in RunDownloadData
+    raise e
+  File "DownloadData.py", line 55, in RunDownloadData
+    ag.generateMaps()
+  File "/home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/api/AGAnalysis.py", line 581, in generateMaps
+    self.agdataset.downloadData(tminRest, tmaxRest, configBKP.getOptionValue("datapath"), configBKP.getOptionValue("evtfile"), configBKP.getOptionValue("logfile"))
+  File "/home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/core/AGDataset.py", line 104, in downloadData
+    _ = self.agrest.gridList(tmin, tmax)
+  File "/home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/utils/AGRest.py", line 100, in gridList
+    raise SSDCRestErrorDownload(json_data["Response"]["message"])
+agilepy.core.CustomExceptions.SSDCRestErrorDownload:  Maximum date interval exceeded: 3 Months

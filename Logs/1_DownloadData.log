@@ -1,0 +1,29 @@
+(agilepy-1.6.3) gabriele@phd-VM:~/Documents/agile/check_agilepy_rest_API$ python DownloadData.py -t 1
+Configuration File: /home/gabriele/Documents/agile/check_agilepy_rest_API/ConfigurationFiles/AgilepyConf_Vela_restricted_period.yml
+2023-02-03 11:58:18,450 [INFO    ] [AgilepyLogger] File and Console loggers are active. Log file: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_restricted_period_20230203-115818/logs/analysis_log.log
+2023-02-03 11:58:18,451 [DEBUG   ] [AGDataset] opening coverage file at /home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/utils/AGILE_datacoverage
+2023-02-03 11:58:18,451 [INFO    ] [AGDataset] AGILE data coverage from 2007-12-01T12:00:00 to 2022-12-31T12:00:00
+2023-02-03 11:58:18,452 [INFO    ] [AGDataset] check coverage OK!
+2023-02-03 11:58:18,453 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/1_Vela_restricted_period/EVT.qfile does not exists
+2023-02-03 11:58:18,453 [INFO    ] [AGDataset] EVT data in interval 59648.0 59658.0 is missing!
+2023-02-03 11:58:18,453 [WARNING ] [AGDataset] Query file /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/1_Vela_restricted_period/LOG.qfile does not exists
+2023-02-03 11:58:18,453 [INFO    ] [AGDataset] LOG data in interval 59648.0 59658.0 is missing!
+2023-02-03 11:58:18,453 [INFO    ] [AGDataset] Downloading data from ssdc..
+2023-02-03 11:58:18,454 [INFO    ] [AGRest] Downloading filelist to download (59648.0,59658.0) (2022-03-10T00:00:00.000, 2022-03-20T00:00:00.000) from https://tools.ssdc.asi.it/AgileData/rest/GRIDList/2022-03-10T00:00:00.000/2022-03-20T00:00:00.000..
+2023-02-03 11:58:18,598 [INFO    ] [AGRest] Took 0.1439807415008545 seconds
+2023-02-03 11:58:18,598 [INFO    ] [AGAnalysis] Removing directory /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_restricted_period_20230203-115818
+2023-02-03 11:58:18,598 [INFO    ] [AgilepyLogger] Removing logger...
+Traceback (most recent call last):
+  File "DownloadData.py", line 79, in <module>
+    RunDownloadData(ConfFilePath)
+  File "DownloadData.py", line 58, in RunDownloadData
+    raise e
+  File "DownloadData.py", line 55, in RunDownloadData
+    ag.generateMaps()
+  File "/home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/api/AGAnalysis.py", line 581, in generateMaps
+    self.agdataset.downloadData(tminRest, tmaxRest, configBKP.getOptionValue("datapath"), configBKP.getOptionValue("evtfile"), configBKP.getOptionValue("logfile"))
+  File "/home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/core/AGDataset.py", line 104, in downloadData
+    _ = self.agrest.gridList(tmin, tmax)
+  File "/home/gabriele/anaconda3/envs/agilepy-1.6.3/lib/python3.8/site-packages/agilepy/utils/AGRest.py", line 103, in gridList
+    raise SSDCRestErrorDownload(json_data["Response"]["message"])
+agilepy.core.CustomExceptions.SSDCRestErrorDownload: No data found.

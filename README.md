@@ -16,9 +16,11 @@ It can be run as
     python DownloadData.py -t 0
     ```
     Change `0` with the progressive number of the Target you are interested in.
-    Data are downloaded in [ConfigurationFiles](./DataFiles/), though the `.gz` fits files are ignored in this repository to keep it light.
+    Data are downloaded in [DataFiles](./DataFiles/), though the `.gz` fits files are ignored in this repository to keep it light.
+Download is performed when calling `AGAnalysis.generateMaps()`.
 
-**Analysis targets chosen and respective codes:**
+**Summary results on each analysis target**
+
 0. Try requesting Vela: 2022-04-01 - 2022-12-31.
     - Error: Maximum Download period allowed: 3 months.
 1. Try requesting Vela inside restricted period: 2022-03-10 - 2022-03-20.

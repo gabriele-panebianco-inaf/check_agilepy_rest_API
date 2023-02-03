@@ -3,7 +3,7 @@ input:
   evtfile: None
   logfile: None
   userestapi: True
-  datapath: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/Vela_restricted_period
+  datapath: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/1_Vela_restricted_period
 
 output:
   outdir: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results

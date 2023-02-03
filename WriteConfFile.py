@@ -56,7 +56,7 @@ if __name__=="__main__":
     ConfFilePath = ConfFileDire.joinpath(f"AgilepyConf_{Target['SourceName']}.yml")
     
     # Make Directory to store Downloaded Data
-    DataFilePath = CurrentDirectory.joinpath(f"DataFiles/{Target['SourceName']}")
+    DataFilePath = CurrentDirectory.joinpath(f"DataFiles/{args.target}_{Target['SourceName']}")
     make_directory(DataFilePath)
     
     # Write the Configuration YAML file
