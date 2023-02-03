@@ -1,0 +1,88 @@
+
+input:
+  evtfile: /agile/check_agilepy_rest_API/DataFiles/5_3C454.3_Docker/EVT.index
+  logfile: /agile/check_agilepy_rest_API/DataFiles/5_3C454.3_Docker/LOG.index
+  userestapi: False
+  datapath: /agile/check_agilepy_rest_API/DataFiles/5_3C454.3_Docker
+
+output:
+  outdir: /agile/check_agilepy_rest_API/Results
+  filenameprefix: analysis_product
+  logfilenameprefix: analysis_log
+  sourcename: 3C454.3_Docker
+  username: Gabriele
+  verboselvl: 2
+
+selection:  
+  emin: 100
+  emax: 10000
+  tmin: 59911.1667
+  tmax: 59913.1667
+  timetype: MJD
+  glon: 86.13
+  glat: -38.18
+  proj: ARC
+  timelist: None
+  filtercode: 5
+  fovradmin: 0
+  fovradmax: 60
+  albedorad: 80
+  dq: 0
+  phasecode: null
+  lonpole: 180
+  lpointing: null
+  bpointing: null
+  maplistgen: "None"
+
+maps:
+  mapsize: 40
+  useEDPmatrixforEXP: false
+  expstep: null
+  spectralindex: 2.1
+  timestep: 160
+  projtype: WCS
+  proj: ARC
+  binsize: 0.25
+  energybins:
+    - 100, 10000
+  fovbinnumber: 1
+  offaxisangle: 30
+
+model:
+  modelfile: null
+  galmode: 1
+  isomode: 1
+  galcoeff: null
+  isocoeff: null
+  emin_sources: 100
+  emax_sources: 10000
+  galmode2: 0
+  galmode2fit: 0
+  isomode2: 0
+  isomode2fit: 0
+
+mle:
+  ranal: 10
+  ulcl: 2
+  loccl: 95
+  expratioevaluation: true
+  expratio_minthr: 0
+  expratio_maxthr: 15
+  expratio_size: 10
+  minimizertype: Minuit
+  minimizeralg: Migrad
+  minimizerdefstrategy: 2
+  mindefaulttolerance: 0.01
+  integratortype: 1
+  contourpoints: 40
+  edpcorrection: 1
+  fluxcorrection: 0
+
+ap:
+  radius: 3
+  timeslot: 3600
+
+plotting:
+  twocolumns: False
+
+        

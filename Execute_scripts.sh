@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # python WriteConfFile.py -t 0
 # python DownloadData.py -t 0 > ./Logs/0_DownloadData.log
@@ -15,4 +16,8 @@
 
 # python WriteConfFile.py -t 4
 # python DownloadData.py -t 4 > ./Logs/4_DownloadData.log
-python DataAnalysis.py -t 4
+# python DataAnalysis.py -t 4
+
+#python WriteConfFile.py -t 5
+#python DownloadData.py -t 5 > ./Logs/5_DownloadData.log
+#python DataAnalysis.py -t 5

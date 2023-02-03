@@ -1,4 +1,4 @@
-# Check if agilepy REST API allows to download data.
+# REPORT: Check if agilepy REST API allows to download data.
 
 **Repository structure**
 - [Targets.yml](./Targets.yml): YAML file with the different targets used for the analysis (target= source position + time intervals requested for download and scientific analysis).
@@ -39,6 +39,28 @@ Logs of program executions are stored in [Logs](./Logs/).
     LOG files were downloaded in OBT 575812732.0 - 583675131.9, see [LOG.index](./DataFiles/3_Vela/LOG.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:51.9.
     Analysis was performed, main results can be seen in [Results/Gabriele_Vela_20230203-174142/](./Results/Gabriele_Vela_20230203-174142/)
 4. Try replicate ATel https://www.astronomerstelegram.org/?read=15782 on 3C454.3.
+    - Data Downloaded as expected, ATel results confirmed, see [Results/Gabriele_3C454.3_20230203-191611/](./Results/Gabriele_3C454.3_20230203-191611/).
+5. Same as case 4, but inside Docker container, not conda environment.
+    - Errors, see below.
 
-
-Cases 0, 1, 2, 3 were tested inside conda environment.
+**Extra Notes**
+- All cases were tested inside anaconda environment.
+- Note: I installed the conda environment after the release of `agilepy 1.6.3`, but when I check the packages version I get:
+    ```
+    $ conda list agile
+    # packages in environment at /home/gabriele/anaconda3/envs/agilepy-1.6.3:
+    # Name                    Version                   Build  Channel
+    agilepy                   1.6.1                    py38_0    agilescience
+    agilepy-dataset           BUILD25ag                     0    agilescience
+    agiletools                BUILD25b3                py38_0    agilescience
+    ```
+    We need to check if the conda environment is built with the latest releases.
+- I tried to run case 4 inside Docker container.
+If I run the container as shown in documentation data cannot be downloaded, as the container does not share the internet connectin of the host.
+    ```
+    urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tools.ssdc.asi.it', port=443): Max retries exceeded with url: /AgileData/rest/publicdatacoverage (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcb3c59d8e0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+    ```
+- If I run the container with the `--network host` option then the following warning is displayed when running:
+    ```
+    WARNING: Published ports are discarded when using host network mode
+    ```

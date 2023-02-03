@@ -43,3 +43,12 @@ Target_4:
   glat: -38.18
   2AGLName: "2AGLJ2254+1609"
   meta: "Request 3C454.3 data for 2 days as in ATel 15872"
+Target_5:
+  SourceName: '3C454.3_Docker'
+  TimeType: 'MJD'
+  tmin: 59911.1667 # 2022-11-28 04:00:00 UTC
+  tmax: 59913.1667 # 2022-11-30 04:00:00 UTC
+  glon: 86.13
+  glat: -38.18
+  2AGLName: "2AGLJ2254+1609"
+  meta: "Request 3C454.3 data for 2 days as in ATel 15872, inside Docker Container"
