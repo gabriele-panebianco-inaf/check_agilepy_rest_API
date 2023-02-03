@@ -1,0 +1,1031 @@
+2023-02-03 17:41:42,562 [INFO    ] [AgilepyLogger] File and Console loggers are active. Log file: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/logs/analysis_log.log
+2023-02-03 17:41:42,659 [INFO    ] [SourcesLibrary] Loaded 1 sources. Total sources: 1
+2023-02-03 17:41:42,660 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['flux'] selectionParamsValues: [9.69539e-06]
+2023-02-03 17:41:42,661 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ0835-4514']
+2023-02-03 17:41:42,661 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ0835-4514']
+2023-02-03 17:41:42,678 [DEBUG   ] [AGAnalysis] Map generation => fovradmin 0 fovradmax 60 bincenter 30 emin 100 emax 50000 fileNamePrefix TN575856000.0_TX583632000.0_EN00100_EX50000_ID01 skymapL /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz skymapH /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 17:41:42,678 [INFO    ] [CtsMapGenerator] Science tool called!
+2023-02-03 17:41:42,678 [DEBUG   ] [CtsMapGenerator] No products exist yet
+2023-02-03 17:41:42,679 [DEBUG   ] [CtsMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0
+2023-02-03 17:41:42,679 [DEBUG   ] [CtsMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_ctsmapgen.par /tmp/agilepy_tmp/qadxa
+2023-02-03 17:41:42,696 [DEBUG   ] [CtsMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT.index', 'None', 40, 0.5, 263.590001, -2.84, 180, 80, 6, 5, 'ARC', 575856000.0, 583632000.0, 100, 50000, 0, 60]
+2023-02-03 17:41:42,697 [DEBUG   ] [CtsMapGenerator] Executing command >>AG_ctsmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT.index None 40 0.5 263.590001 -2.84 180 80 6 5 ARC 575856000.0 583632000.0 100 50000 0 60
+2023-02-03 17:42:00,513 [DEBUG   ] [CtsMapGenerator] Science tool stdout:
+
+################################################################
+### Task AG_ctsmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.  ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz
+Event file index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT.index
+Time intervals list: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 263.590001
+Latitude of map center (galactic): -2.84
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Orbital phase code: 6
+Event filter code: 5
+Projection (ARC or AIT): ARC
+Initial time(sec): 575856000
+Final time(sec): 583632000
+Min energy: 100
+Max energy: 50000
+Min off-axis angle (degrees): 0
+Max off-axis angle (degrees): 60
+INTERVALS N=1:
+   575856000.000000 583632000.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT.index
+MakeSelection intervals: 
+575856000.000000 583632000.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2203311200_2204151200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2203311200_2204151200_STD1Kal_FM.EVT.gz > /tmp/fileq2Mn0x
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+75524 rows total
+Selection file total: 75524
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2204151200_2204301200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2204151200_2204301200_STD1Kal_FM.EVT.gz > /tmp/fileq2Mn0x
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+76455 rows total
+Selection file total: 151979
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2204301200_2205151200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2204301200_2205151200_STD1Kal_FM.EVT.gz > /tmp/fileq2Mn0x
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+76338 rows total
+Selection file total: 228317
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2205151200_2205311200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2205151200_2205311200_STD1Kal_FM.EVT.gz > /tmp/fileq2Mn0x
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+59924 rows total
+Selection file total: 288241
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2205311200_2206151200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2205311200_2206151200_STD1Kal_FM.EVT.gz > /tmp/fileq2Mn0x
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+27455 rows total
+Selection file total: 315696
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2206151200_2206301200_STD1Kal_FM.EVT.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/EVT/ag2206151200_2206301200_STD1Kal_FM.EVT.gz > /tmp/fileq2Mn0x
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && ENERGY >= 100 && ENERGY <= 50000 && PH_EARTH > 80 && THETA < 60 && THETA >= 0 && PHASE .NE. 1 && PHASE .NE. 2 && EVSTATUS .NE. 'L' && EVSTATUS .NE. 'S'
+70642 rows total
+Selection file total: 386338
+Selected 386338 rows.
+fits_get_num_rows 0 rows.
+Reading all 386338 rows
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz
+creating Counts Map....................................
+writing Counts Map with 25520 events
+writing header........................................
+
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz
+#################################################################
+###      AG_ctsmapgen5 exiting .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 17:42:00,513 [INFO    ] [CtsMapGenerator] Science tool AG_ctsmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz']
+2023-02-03 17:42:00,513 [INFO    ] [ExpMapGenerator] Science tool called!
+2023-02-03 17:42:00,513 [DEBUG   ] [ExpMapGenerator] No products exist yet
+2023-02-03 17:42:00,513 [DEBUG   ] [ExpMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0
+2023-02-03 17:42:00,514 [DEBUG   ] [ExpMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_expmapgen.par /tmp/agilepy_tmp/hcigp
+2023-02-03 17:42:00,524 [DEBUG   ] [ExpMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG.index', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz', 'None', 'None', 'None', 40, 0.5, 263.590001, -2.84, 180, 80, 0.5, 360, 5.0, 6, 'ARC', 4.0, 160, 2.1, 575856000.0, 583632000.0, 100, 50000, 0, 60]
+2023-02-03 17:42:00,524 [DEBUG   ] [ExpMapGenerator] Executing command >>AG_expmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG.index /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz None None None 40 0.5 263.590001 -2.84 180 80 0.5 360 5.0 6 ARC 4.0 160 2.1 575856000.0 583632000.0 100 50000 0 60
+2023-02-03 17:44:23,974 [DEBUG   ] [ExpMapGenerator] Science tool stdout:
+
+################################################################
+###   AG_expmapgen B25 v1.3.0 - A.C. T.C. A.T. A.B. A.Z.     ###
+################################################################
+
+
+INPUT PARAMETERS:
+Output file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+Grid log index file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG.index
+Effective area file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz
+Energy dispersion file name: None
+Maplist file name: None
+Time intervals file name: None
+Size of Map (degrees): 40
+Bin size (degrees): 0.5
+Longitude of map center (galactic): 263.590001
+Latitude of map center (galactic): -2.84
+Rotation of map (degrees): 180
+Radius of earth albedo (degrees): 80
+Boresight movement tolerance (degrees): 0.5
+Roll tolerance (degrees): 360
+Earth tolerance (degrees): 5
+Orbital phase code: 6
+Projection (ARC or AIT): ARC
+Bin step size: 4
+LOG file step size: 160
+Spectral index: 2.1
+Initial time (sec): 575856000
+Final time (sec): 583632000
+Minimum energy: 100
+Maximum energy: 50000
+Min radius of field of view (degrees): 0
+Max radius of field of view (degrees): 60
+INTERVALS N=1:
+   575856000.000000 583632000.000000
+Selecting the events..
+filelist: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG.index
+MakeSelection intervals: 
+575856000.000000 583632000.000000
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-575812732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-575812732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+2176 rows total
+Selection file total: 2176
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-575899132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-575899132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4319 rows total
+Selection file total: 6495
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-575985532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-575985532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4094 rows total
+Selection file total: 10589
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576071932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576071932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3672 rows total
+Selection file total: 14261
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576158332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576158332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4315 rows total
+Selection file total: 18576
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576244732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576244732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4086 rows total
+Selection file total: 22662
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576331132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576331132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4263 rows total
+Selection file total: 26925
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576417532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576417532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3832 rows total
+Selection file total: 30757
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576503932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576503932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4063 rows total
+Selection file total: 34820
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576590332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576590332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4188 rows total
+Selection file total: 39008
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576676732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576676732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4279 rows total
+Selection file total: 43287
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576763132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576763132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4297 rows total
+Selection file total: 47584
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576849532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576849532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4288 rows total
+Selection file total: 51872
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576935932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-576935932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4287 rows total
+Selection file total: 56159
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577022332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577022332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4077 rows total
+Selection file total: 60236
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577108732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577108732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4342 rows total
+Selection file total: 64578
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577195132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577195132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4235 rows total
+Selection file total: 68813
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577281532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577281532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4291 rows total
+Selection file total: 73104
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577367932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577367932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3753 rows total
+Selection file total: 76857
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577454332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577454332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4299 rows total
+Selection file total: 81156
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577540732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577540732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3921 rows total
+Selection file total: 85077
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577627132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577627132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4272 rows total
+Selection file total: 89349
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577713532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577713532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4314 rows total
+Selection file total: 93663
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577799932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577799932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4334 rows total
+Selection file total: 97997
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577886332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577886332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4309 rows total
+Selection file total: 102306
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577972732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-577972732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4341 rows total
+Selection file total: 106647
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578059132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578059132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4281 rows total
+Selection file total: 110928
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578145532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578145532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4311 rows total
+Selection file total: 115239
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578231932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578231932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4342 rows total
+Selection file total: 119581
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578318332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578318332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3664 rows total
+Selection file total: 123245
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578404732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578404732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4270 rows total
+Selection file total: 127515
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578491132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578491132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4189 rows total
+Selection file total: 131704
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578577532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578577532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3933 rows total
+Selection file total: 135637
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578663932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578663932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4274 rows total
+Selection file total: 139911
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578750332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578750332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4238 rows total
+Selection file total: 144149
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578836732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578836732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4097 rows total
+Selection file total: 148246
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578923132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-578923132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4319 rows total
+Selection file total: 152565
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579009532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579009532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4272 rows total
+Selection file total: 156837
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579095932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579095932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4192 rows total
+Selection file total: 161029
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579182332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579182332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4249 rows total
+Selection file total: 165278
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579268732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579268732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4359 rows total
+Selection file total: 169637
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579355132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579355132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4367 rows total
+Selection file total: 174004
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579441532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579441532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4176 rows total
+Selection file total: 178180
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579527932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579527932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4267 rows total
+Selection file total: 182447
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579614332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579614332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4190 rows total
+Selection file total: 186637
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579700732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579700732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4295 rows total
+Selection file total: 190932
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579787132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579787132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4282 rows total
+Selection file total: 195214
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579873532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579873532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4229 rows total
+Selection file total: 199443
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579959932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-579959932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4088 rows total
+Selection file total: 203531
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580046332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580046332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3905 rows total
+Selection file total: 207436
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580132732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580132732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4288 rows total
+Selection file total: 211724
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580219132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580219132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3602 rows total
+Selection file total: 215326
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580305532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580305532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4301 rows total
+Selection file total: 219627
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580391932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580391932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4368 rows total
+Selection file total: 223995
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580478332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580478332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4322 rows total
+Selection file total: 228317
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580564732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580564732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3722 rows total
+Selection file total: 232039
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580651132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580651132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4357 rows total
+Selection file total: 236396
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580737532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-580737532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3531 rows total
+Selection file total: 239927
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-581860732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-581860732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3769 rows total
+Selection file total: 243696
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-581947132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-581947132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4255 rows total
+Selection file total: 247951
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582033532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582033532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4306 rows total
+Selection file total: 252257
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582119932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582119932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4360 rows total
+Selection file total: 256617
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582206332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582206332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4373 rows total
+Selection file total: 260990
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582292732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582292732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4316 rows total
+Selection file total: 265306
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582379132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582379132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4391 rows total
+Selection file total: 269697
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582465532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582465532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4231 rows total
+Selection file total: 273928
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582551932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582551932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4383 rows total
+Selection file total: 278311
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582638332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582638332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4257 rows total
+Selection file total: 282568
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582724732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582724732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4252 rows total
+Selection file total: 286820
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582811132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582811132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3370 rows total
+Selection file total: 290190
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582897532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582897532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4308 rows total
+Selection file total: 294498
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582983932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-582983932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+3511 rows total
+Selection file total: 298009
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583070332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583070332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4331 rows total
+Selection file total: 302340
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583156732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583156732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4195 rows total
+Selection file total: 306535
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583243132_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583243132_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4359 rows total
+Selection file total: 310894
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583329532_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583329532_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+47 rows total
+Selection file total: 310941
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583415932_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583415932_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+2842 rows total
+Selection file total: 313783
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583502332_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583502332_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+4330 rows total
+Selection file total: 318113
+Selecting from: /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583588732_STD1Kal.LOG.gz
+gunzip -c /home/gabriele/Documents/agile/check_agilepy_rest_API/DataFiles/3_Vela/LOG/ag-583588732_STD1Kal.LOG.gz > /tmp/fileFyRkkb
+Log expr: TIME >= 575856000.000000 && TIME < 583632000.000000 && LIVETIME > 0 && LOG_STATUS == 0 && MODE == 2 && PHASE .NE. 1 && PHASE .NE. 2 && ((#ROW == 1) || (#ROW == (#ROW/160) *160))
+2135 rows total
+Selection file total: 320248
+Selected 320248 rows.
+mdim: 40 mres: 0.5 mxdim: 80 nmaps: 1
+Dimension of m_aeffgrid: 8 19 14
+Dimension of m_avgValues: 8 19
+MakeGridAverage2: 100 20000
+Beginning interpolation..
+Creating file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+Created file /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+Creating image in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+Closing /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+#################################################################
+###  AG_expmapgen B25 exiting  .............................. ###
+#################################################################
+
+
+
+
+2023-02-03 17:44:23,980 [INFO    ] [ExpMapGenerator] Science tool AG_expmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz']
+2023-02-03 17:44:23,980 [INFO    ] [GasMapGenerator] Science tool called!
+2023-02-03 17:44:23,980 [DEBUG   ] [GasMapGenerator] No products exist yet
+2023-02-03 17:44:23,980 [DEBUG   ] [GasMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0
+2023-02-03 17:44:23,980 [DEBUG   ] [GasMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_gasmapgen.par /tmp/agilepy_tmp/dcefe
+2023-02-03 17:44:23,998 [DEBUG   ] [GasMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.gas.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz', '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz']
+2023-02-03 17:44:23,999 [DEBUG   ] [GasMapGenerator] Executing command >>AG_gasmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.gas.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+2023-02-03 17:44:24,580 [DEBUG   ] [GasMapGenerator] Science tool stdout:
+
+#################################################################
+###    AG_gasmapgen B25 v1.3.0 - A.C. A.P. A.T. A.B. A.Z.     ###
+#################################################################
+
+
+INPUT PARAMETERS:
+Exposure filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+Output filename: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.gas.gz
+Diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+High res diffuse model filename: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/100_50000.SKY002.SFMG_H0025.disp.conv.sky.gz
+##################################################################
+###   AG_gasmapgen B25 exiting ............................... ###
+##################################################################
+
+
+
+
+2023-02-03 17:44:24,581 [INFO    ] [GasMapGenerator] Science tool AG_gasmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.gas.gz']
+2023-02-03 17:44:24,581 [INFO    ] [IntMapGenerator] Science tool called!
+2023-02-03 17:44:24,581 [DEBUG   ] [IntMapGenerator] No products exist yet
+2023-02-03 17:44:24,581 [DEBUG   ] [IntMapGenerator] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0
+2023-02-03 17:44:24,581 [DEBUG   ] [IntMapGenerator] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_intmapgen.par /tmp/agilepy_tmp/xarub
+2023-02-03 17:44:24,591 [DEBUG   ] [IntMapGenerator] args: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.int.gz', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz']
+2023-02-03 17:44:24,591 [DEBUG   ] [IntMapGenerator] Executing command >>AG_intmapgen /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.int.gz /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz
+2023-02-03 17:44:24,633 [DEBUG   ] [IntMapGenerator] Science tool stdout:
+
+ 
+ 
+#################################################################
+########## AG_intmapgen B25 v1.2.0 - A.B.               #########
+#################################################################
+ 
+INPUT PARAMETERS:
+ 
+Enter exposure file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz
+Enter output file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.int.gz
+Enter counts file name = /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.gz
+ 
+ 
+AG_intmapgen...............................starting
+AG_intmapgen............................... exiting
+
+
+
+#################################################################
+#########   AG_intmapgen B25 ........... exiting ################
+#################################################################
+
+
+
+
+
+2023-02-03 17:44:24,634 [INFO    ] [IntMapGenerator] Science tool AG_intmapgen produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.int.gz']
+2023-02-03 17:44:24,635 [INFO    ] [MapList] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product.maplist4
+2023-02-03 17:44:24,635 [INFO    ] [AGAnalysis] Maplist file created in /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product.maplist4
+2023-02-03 17:44:24,635 [INFO    ] [AGAnalysis] Took 161.973590 seconds.
+2023-02-03 17:44:24,635 [INFO    ] [SourcesLibrary] the parameters are multiL=None, multiB=None, multiLPeak=None, multiBPeak=None, startL=263.585, startB=-2.84083 
+2023-02-03 17:44:24,636 [INFO    ] [SourcesLibrary] ellipse values not available, I got peak values
+2023-02-03 17:44:24,636 [INFO    ] [SourcesLibrary] ellipse and peak values not available, I got initial values
+2023-02-03 17:44:24,636 [INFO    ] [SourcesLibrary] File /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/sourceLibrary00000.txt has been produced
+2023-02-03 17:44:24,636 [INFO    ] [Multi] Science tool called!
+2023-02-03 17:44:24,636 [DEBUG   ] [Multi] No products exist yet
+2023-02-03 17:44:24,636 [DEBUG   ] [Multi] outputDir=/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0
+2023-02-03 17:44:24,636 [DEBUG   ] [Multi] Executing command >>cp /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/share/AG_multi.par /tmp/agilepy_tmp/wobjy
+2023-02-03 17:44:24,644 [DEBUG   ] [Multi] args: [PosixPath('/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product.maplist4'), '/home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.edp.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.psd.gz', 10, 1, 1, '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/sourceLibrary00000.txt', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product', 2, 5.99147, 0, 0, 0, 0, 1, 0, 'Minuit', 'Migrad', 2, 0.01, 1, 1, 0, 15, 10, 40]
+2023-02-03 17:44:24,644 [DEBUG   ] [Multi] Executing command >>AG_multi /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product.maplist4 /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.edp.gz /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.psd.gz 10 1 1 /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/sourceLibrary00000.txt /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product 2 5.99147 0 0 0 0 1 0 Minuit Migrad 2 0.01 1 1 0 15 10 40
+2023-02-03 17:44:26,974 [DEBUG   ] [Multi] Science tool stdout:
+
+#################################################################
+####    AG_Multi B25 v6.0.0 - A.C. T.C. A.T. A.B            #####
+#################################################################
+
+
+INPUT PARAMETERS:
+
+Map file name: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product.maplist4
+SAR file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.sar.gz
+EDP file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.edp.gz
+PSD file name: /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/model/scientific_analysis/data/AG_GRID_G0017_SFMG_H0025.psd.gz
+Radius of analysis: 10
+Galactic parameter mode: 1
+Isotropic parameter mode: 1
+Sources list: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/sourceLibrary00000.txt
+Output file name prefix: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product
+Upper limit confidence level: 2
+Location contour confidence level: 5.99147
+Diffuse emission optimisation for Loop2: 0
+Diffuse emission optimisation for Loop2 - fit: 0
+Isotropic emission optimisation for Loop2: 0
+Isotropic emission optimisation for Loop2 - fit: 0
+EDP correction: 1
+Flux calculation correction for spectral shape 1=output, 2=input and output: 0
+Minimizer type: Minuit
+Minimizer algorithm: Migrad
+Minimizer default strategy: 2
+Minimizer default tolerance: 0.01
+Integrator type (1-8): 1
+Enable exp-ratio evaluation. 1 (for 'yes') or 0 (for no): 1
+The lower bound for the threshold level in exp-ratio evaluation: 0
+The upper bound for the threshold level in exp-ratio evaluation: 15
+The edge degree dimension of the exp-ratio evaluation area: 10
+Number of points to determine the contour (0-400): 40
+
+Using a single map set
+Dimension of m_aeffgrid: 8 19 14
+dimension of m_psfgrid 8 19 14 4 200
+Dimension of m_edpgrid: 8 19 14 14
+Total CTS = 25520
+Total EXP = 8391.31
+Gasmap 1 /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.gas.gz index = 2
+Isomap 1 /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/maps/0/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.gz index = 2
+Total GAL = 1444.21
+## Set integrator type: 1
+## Set minimizer user type: Minuit Migrad 2
+### 9.69539e-06 263.585 -2.84083 1.71345 3 2 2AGLJ0835-4514 0 2 3913.06 1.34774 0.5 5.0 20.0 10000.0 0.0 100.0
+#### 2 0.5 5 20 10000 0 100
+           Minimizer Type :          Minuit
+      Minimizer Algorithm :          Migrad
+                 Strategy :               2
+                Tolerance :            0.01
+           Max func calls :               0
+           Max iterations :               0
+           Func Precision :              -1
+         Error definition :               1
+              Print Level :               0
+
+Sources [name sqrt(minTS) flux index position(l, b) typefun par2 par3]
+1 2AGLJ0835-4514 2 9.69539e-06 free 1.71345 fixed (263.585, -2.84083) free 2 PLSuperExpCutOff(1 - gamma1, 2 - Ec, 3 - gamma2) 3913.06 fixed 1.34774 fixed 
+Total SRC = 0.990844
+
+Flux factor: 1e+06; upper bound: 1e+07
+
+Parameters
+1 - Galactic: 1 free
+2 - Isotropic: 1 free
+3 - 2AGLJ0835-4514_f: 9.69539e-06 free
+4 - 2AGLJ0835-4514_x: 1.71345 fixed
+5 - 2AGLJ0835-4514_l: 263.585 free
+6 - 2AGLJ0835-4514_b: -2.84083 free
+7 - 2AGLJ0835-4514_2: 3913.06 fixed
+8 - 2AGLJ0835-4514_3: 1.34774 fixed
+
+Total CNT = 0.990844
+Begin first loop
+
+Considering source 1: 2AGLJ0835-4514
+##AB: Move
+Total CTS IN MOVE = 25520
+##AB: FixDistantSources
+##AB: FitPositionIndex
+
+S1: Source 1: 2AGLJ0835-4514: Flux free, position and index fixed 
+### pre-fitting parameters
+Total CNT = 0.990844, NormFactor = 1, GetExp() = 3.09232e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LN
+-
+ FCN=628.433 FROM MIGRAD    STATUS=CONVERGED     177 CALLS         178 TOTAL
+                     EDM=1.15364e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     8.01768e-01   5.06349e-02   4.70458e-05   1.18400e-01
+   2  Isotropic    1.10425e+01   5.60044e-01   1.51961e-04  -3.76544e-02
+   3  2AGLJ0835-4514_f   8.48944e+00   2.36971e-01   7.48135e-07   3.48072e+00
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63585e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.84083e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 179 iteration. Result=0
+S2: Source 1: 2AGLJ0835-4514: Flux=0 
+### pre-fitting parameters
+Total CNT = 0.990844, NormFactor = 1, GetExp() = 3.09232e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 (nullified)
+FIT HISTO LN
+ FCN=2324.72 FROM MIGRAD    STATUS=CONVERGED      83 CALLS          84 TOTAL
+                     EDM=2.83651e-10    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.88532e+00   5.37480e-02   6.53890e-05   3.73983e-03
+   2  Isotropic    6.86158e+00   5.80971e-01   3.80297e-04  -1.01416e-04
+   3  2AGLJ0835-4514_f   0.00000e+00     fixed    
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63585e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.84083e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 85 iteration. Result=0
+sqrt(TS) = 58.2457
+
+amin1=628.433, amin0=2324.72, L1=-9944.66, L0=-8248.38
+S3: Source 1: 2AGLJ0835-4514: Flux free, Position free
+Trying position (263.585, -2.84083)
+### pre-fitting parameters
+Total CNT = 0.990844, NormFactor = 1, GetExp() = 3.09232e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux Position free
+FIT HISTO LN
+\
+ FCN=624.923 FROM MIGRAD    STATUS=CONVERGED     160 CALLS         161 TOTAL
+                     EDM=9.39313e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     7.94830e-01   5.07903e-02   4.70867e-05  -1.77234e-01
+   2  Isotropic    1.11163e+01   5.61657e-01   1.51184e-04  -4.75157e-02
+   3  2AGLJ0835-4514_f   8.48048e+00   2.37069e-01   7.48136e-07  -3.05261e+01
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02   1.96014e-02   3.38081e-04   2.51421e-02
+   6  2AGLJ0835-4514_b  -2.80812e+00   1.88972e-02   3.25832e-04  -2.10490e-02
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 162 iteration. Result=0
+Source 1 changes: 80 times the position
+Fit result = 0
+S4: Source 1: 2AGLJ0835-4514 best position found in (l,b) = (263.545,-2.80812)
+S5: Source 1: 2AGLJ0835-4514: Flux free, position fixed
+### pre-fitting parameters
+Total CNT = 0.992561, NormFactor = 1, GetExp() = 3.0843e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LN
+ FCN=624.923 FROM MIGRAD    STATUS=CONVERGED      45 CALLS          46 TOTAL
+                     EDM=1.27928e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     7.94838e-01   5.06457e-02   4.70883e-05   3.77613e-02
+   2  Isotropic    1.11163e+01   5.60384e-01   1.51158e-04   1.09517e-02
+   3  2AGLJ0835-4514_f   8.50266e+00   2.37256e-01   7.48135e-07  -1.32254e-01
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.80812e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 47 iteration. Result=0
+S6: Source 1: 2AGLJ0835-4514: Flux=0, position fixed
+### pre-fitting parameters
+Total CNT = 0.992561, NormFactor = 1, GetExp() = 3.0843e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 (nullified)
+FIT HISTO LN
+ FCN=2324.72 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
+                     EDM=3.71252e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.88533e+00   5.37479e-02   6.53870e-05   4.59483e-02
+   2  Isotropic    6.86149e+00   5.80970e-01   3.80334e-04  -5.51256e-04
+   3  2AGLJ0835-4514_f   0.00000e+00     fixed    
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.80812e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 82 iteration. Result=0
+sqrt(TS) = 58.306
+
+Begin second loop
+
+gal0:
+ 1.88533
+
+gal1:
+ 0.794838
+
+iso0:
+ 6.86149
+
+iso1:
+ 11.1163
+
+
+Considering source 1: 2AGLJ0835-4514
+Total CTS IN MOVE = 25520
+
+Source 1: 2AGLJ0835-4514: Flux=0, position fixed
+### pre-fitting parameters
+Total CNT = 0.992561, NormFactor = 1, GetExp() = 3.0843e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 (nullified)
+FIT HISTO LNE
+ FCN=2322.32 FROM MINOS     STATUS=SUCCESSFUL     24 CALLS          86 TOTAL
+                     EDM=1.77367e-09    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     1.89804e+00   5.39070e-02  -1.78245e-05   5.32772e-04
+   2  Isotropic    6.67010e+00   5.83021e-01   5.83021e-01   1.00266e-03
+   3  2AGLJ0835-4514_f   0.00000e+00     fixed    
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.80812e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 87 iteration. Result=0
+
+Source 1: 2AGLJ0835-4514: Flux free, position fixed
+### pre-fitting parameters
+Total CNT = 0.992561, NormFactor = 1, GetExp() = 3.0843e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LNE
+|
+ FCN=622.801 FROM MINOS     STATUS=SUCCESSFUL     40 CALLS         191 TOTAL
+                     EDM=1.66131e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     8.06475e-01   5.08254e-02  -9.44205e-06   3.55262e-03
+   2  Isotropic    1.09412e+01   5.62699e-01   6.47657e-06   1.82406e-03
+   3  2AGLJ0835-4514_f   8.50384e+00   2.37295e-01   2.37295e-01   1.58310e+01
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.80812e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 192 iteration. Result=0
+sqrt(TS) = 58.3013
+
+amin0=2322.32, amin1=622.801, L0=-8232.15, L1=-9931.67
+#### Source# 0 3 3399.04 force 0
+
+Source 1: 2AGLJ0835-4514: Flux and position free, Errordef = 5.99147
+### pre-fitting parameters
+Total CNT = 0.992561, NormFactor = 1, GetExp() = 3.0843e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux Position free
+FIT HISTO LNE
+/
+ 
+ 
+-
+\
+|
+/
+ FCN=622.801 FROM MINOS     STATUS=SUCCESSFUL     83 CALLS         763 TOTAL
+                     EDM=4.60901e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     8.06542e-01   1.24753e-01  -1.41279e-05  -1.19423e-02
+   2  Isotropic    1.09405e+01   1.38005e+00   2.99265e-05  -2.36896e-03
+   3  2AGLJ0835-4514_f   8.50365e+00   5.81861e-01   8.48437e-08  -2.51143e+00
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02   4.80863e-02   3.19198e-06   6.60731e-05
+   6  2AGLJ0835-4514_b  -2.80846e+00   4.62524e-02   4.62524e-02  -2.81712e-04
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 2.99573
+Fitting done in 764 iteration. Result=70
+Source 1 changes: 441 times the position
+Fit result = 0
+Finding contour for source 1
+ 
+ 
+-
+\
+|
+/
+ 
+Done in 738 iterations
+2AGLJ0835-4514: Finding the best ellipse
+ FCN=5.42072e-05 FROM MINOS     STATUS=PROBLEMS       51 CALLS         398 TOTAL
+                     EDM=4.27751e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Axis 1       4.79543e-02   1.61000e-02  -1.92211e-01  -9.12886e-05
+   2  Axis 2       4.68840e-02   1.59059e-02   1.71284e-01  -8.11032e-05
+   3  Angle        3.87794e-02   2.18605e+00   2.18605e+00   3.23677e-05
+                               ERR DEF= 2.99573
+
+Source 1: 2AGLJ0835-4514: Flux free, position fixed, Errordef = 1
+### pre-fitting parameters
+Total CNT = 0.993701, NormFactor = 1, GetExp() = 3.09232e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LNE
+ 
+ FCN=622.801 FROM MINOS     STATUS=SUCCESSFUL     40 CALLS         144 TOTAL
+                     EDM=9.44637e-09    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     8.06544e-01   5.08217e-02  -9.60521e-06   4.42949e-03
+   2  Isotropic    1.09405e+01   5.62656e-01   6.58159e-06   2.16416e-03
+   3  2AGLJ0835-4514_f   8.48160e+00   2.36676e-01   2.36676e-01   1.54942e+01
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.80846e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 0.5
+Fitting done in 145 iteration. Result=0
+Source 1 changes: 1 times the position
+sqrt(TS) = 58.3013
+## SET -9931.67
+Source 1: 2AGLJ0835-4514: Finding upper level
+### pre-fitting parameters
+Total CNT = 0.992563, NormFactor = 1, GetExp() = 3.09232e+08, m_fluxScaleFactor = 1e+06
+Fitting of source 1 Flux free
+FIT HISTO LONE
+-
+ FCN=622.801 FROM MINOS     STATUS=SUCCESSFUL     41 CALLS         187 TOTAL
+                     EDM=1.44404e-12    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Galactic     8.06541e-01   1.01653e-01  -3.77689e-05   3.14776e-02
+   2  Isotropic    1.09405e+01   1.12524e+00   2.58162e-05   1.59524e-02
+   3  2AGLJ0835-4514_f   8.48161e+00   4.73358e-01   4.73358e-01   4.44228e-01
+   4  2AGLJ0835-4514_x   1.71345e+00     fixed    
+   5  2AGLJ0835-4514_l   2.63545e+02     fixed    
+   6  2AGLJ0835-4514_b  -2.80846e+00     fixed    
+   7  2AGLJ0835-4514_2   3.91306e+03     fixed    
+   8  2AGLJ0835-4514_3   1.34774e+00     fixed    
+                               ERR DEF= 2
+Fitting done in 188 iteration. Result=0
+
+End of fitting.
+
+Diffuse parameters tables
+Values around each source, with(1) or without(0) it
+Coefficients
+Source               gal1      gal0      iso1      iso0
+2AGLJ0835-4514   0.806544   1.89804   10.9405    6.6701
+Errors
+Source               gal1      gal0      iso1      iso0
+2AGLJ0835-4514  0.0508217  0.053907  0.872167  0.868697
+Bayes confidence level 2 alpha 0.045 and psf 4 for emin 100
+NOFF: 1783.32
+EXCESS: 1373.68
+sigma: 70.2874
+diff: 1373.68
+quot: 2
+UL CTS: 1502.46
+UL flux: 4.87133e-06
+helene   4.87133e-06
+
+**ExpRatioEvaluator - started!
+*Normalizing image... 
+ - Computing normalization factors matrix..
+ - Computing normalization factors matrix completed!
+*Normalization completed!
+Deleting normalizedImage..
+
+**ExpRatioEvaluator - started!
+*Normalizing image... 
+ - Computing normalization factors matrix..
+ - Computing normalization factors matrix completed!
+*Normalization completed!
+Deleting normalizedImage..
+#################################################################
+##########       AG_Multi B25........ exiting ###################
+#################################################################
+
+
+
+2023-02-03 17:44:26,975 [INFO    ] [Multi] Science tool AG_multi produced:
+ ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product_2AGLJ0835-4514.source', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product.html', '/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product.log']
+2023-02-03 17:44:26,975 [INFO    ] [AGAnalysis] AG_multi produced: ['/home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product_2AGLJ0835-4514.source']
+2023-02-03 17:44:26,975 [DEBUG   ] [SourcesLibrary] Parsing output file of AG_multi: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/mle/0/analysis_product_2AGLJ0835-4514.source
+2023-02-03 17:44:26,976 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['name'] selectionParamsValues: ['2AGLJ0835-4514']
+2023-02-03 17:44:26,976 [INFO    ] [AGAnalysis] Took 2.341050 seconds.
+2023-02-03 17:44:26,976 [DEBUG   ] [SourcesLibrary] userSelectionParams: ['sqrtTS'] selectionParamsValues: [58.3013]
+2023-02-03 17:44:26,977 [INFO    ] [SourcesLibrary] File /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/sources_library/source_regions.reg has been produced
+2023-02-03 17:44:26,977 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 17:44:26,977 [INFO    ] [PlottingUtils] The region catalog /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/catalogs/2AGL_2.reg will be loaded.
+2023-02-03 17:44:29,686 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/plots/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.cts.png
+2023-02-03 17:44:29,686 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 17:44:30,027 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/plots/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.exp.png
+2023-02-03 17:44:30,027 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 17:44:30,377 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/plots/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.gas.png
+2023-02-03 17:44:30,377 [WARNING ] [AGAnalysis] singleMode has been turned off because only one map is going to be displayed.
+2023-02-03 17:44:30,377 [INFO    ] [PlottingUtils] The region catalog /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/sources_library/source_regions.reg will be loaded.
+2023-02-03 17:44:30,377 [INFO    ] [PlottingUtils] The region catalog /home/gabriele/anaconda3/envs/agilepy-1.6.3/agiletools/catalogs/2AGL_2.reg will be loaded.
+2023-02-03 17:44:31,545 [INFO    ] [PlottingUtils] Produced: /home/gabriele/Documents/agile/check_agilepy_rest_API/Results/Gabriele_Vela_20230203-174142/plots/analysis_product_TN575856000.0_TX583632000.0_EN00100_EX50000_ID01.int.png

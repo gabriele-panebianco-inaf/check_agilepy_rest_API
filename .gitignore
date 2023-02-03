@@ -3,3 +3,13 @@
 
 # Extensions
 *.gz
+*.con
+*.source
+*.txt
+*.maplist4
+*.reg
+
+# Files
+Results/*/mle/*/analysis_product
+
+# Exceptions
