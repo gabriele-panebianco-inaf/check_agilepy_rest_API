@@ -36,4 +36,5 @@ Download is performed when calling `AGAnalysis.generateMaps()`.
     - Data Downloaded, as expected.
     EVT files were downloaded in OBT 575812732.0 - 583675132.0, see [EVT.index](./DataFiles/3_Vela/EVT.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:52.0.
     LOG files were downloaded in OBT 575812732.0 - 583675131.9, see [LOG.index](./DataFiles/3_Vela/LOG.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:51.9.
+    Analysis was performed, main results can be seen in [Results/Gabriele_Vela_20230203-174142/](./Results/Gabriele_Vela_20230203-174142/)
 - Try one or more ATels.
