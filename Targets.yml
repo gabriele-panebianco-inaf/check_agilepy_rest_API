@@ -34,3 +34,12 @@ Target_3:
   glat: -2.84
   2AGLName: "2AGLJ0835-4514"
   meta: "Request Vela data for a period of time < 3 months"
+Target_4:
+  SourceName: '3C454.3'
+  TimeType: 'MJD'
+  tmin: 59911.1667 # 2022-11-28 04:00:00 UTC
+  tmax: 59913.1667 # 2022-11-30 04:00:00 UTC
+  glon: 86.13
+  glat: -38.18
+  2AGLName: "2AGLJ0835-4514"
+  meta: "Request 3C454.3 data for 2 days as in ATel 15872"
