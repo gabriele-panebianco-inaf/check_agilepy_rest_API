@@ -5,6 +5,7 @@ Target_0:
   tmax: 59944 # 2022-12-31 00:00:00 UTC
   glon: 263.59
   glat: -2.84
+  2AGLName: "2AGLJ0835-4514"
   meta: "Request Vela data for a period of time > 3 months"
 Target_1:
   SourceName: 'Vela_restricted_period'
@@ -13,6 +14,7 @@ Target_1:
   tmax: 59658 # 2022-03-20 00:00:00 UTC
   glon: 263.59
   glat: -2.84
+  2AGLName: "2AGLJ0835-4514"
   meta: "Request Vela data inside the restricted period"
 Target_2:
   SourceName: 'Vela_across_restricted_period'
@@ -21,6 +23,7 @@ Target_2:
   tmax: 59679 # 2022-04-10 00:00:00 UTC
   glon: 263.59
   glat: -2.84
+  2AGLName: "2AGLJ0835-4514"
   meta: "Request Vela data across the restricted period"
 Target_3:
   SourceName: 'Vela'
@@ -29,4 +32,5 @@ Target_3:
   tmax: 59760 # 2022-06-30 00:00:00 UTC
   glon: 263.59
   glat: -2.84
+  2AGLName: "2AGLJ0835-4514"
   meta: "Request Vela data for a period of time < 3 months"

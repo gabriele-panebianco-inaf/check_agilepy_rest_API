@@ -19,8 +19,9 @@ It can be run as
     Change `0` with the progressive number of the Target you are interested in.
     Data are downloaded in [DataFiles](./DataFiles/), though the `.gz` fits files are ignored in this repository to keep it light.
 Download is performed when calling `AGAnalysis.generateMaps()`.
+Logs of program executions are stored in [Logs](./Logs/).
 
-- Logs of program executions are stored in [Logs](./Logs/).
+- [DataAnalysis](./DataAnalysis.py) Read the Agilepy Configuration file for data already downloaded and performs a MLE analysis with free position and flux in a single energy bin 100-50000 MeV.
 
 **Summary results on each analysis target**
 
@@ -37,4 +38,7 @@ Download is performed when calling `AGAnalysis.generateMaps()`.
     EVT files were downloaded in OBT 575812732.0 - 583675132.0, see [EVT.index](./DataFiles/3_Vela/EVT.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:52.0.
     LOG files were downloaded in OBT 575812732.0 - 583675131.9, see [LOG.index](./DataFiles/3_Vela/LOG.index), i.e. 2022-03-31 11:58:52.0 - 2022-06-30 11:58:51.9.
     Analysis was performed, main results can be seen in [Results/Gabriele_Vela_20230203-174142/](./Results/Gabriele_Vela_20230203-174142/)
-- Try one or more ATels.
+4. Try replicate ATel https://www.astronomerstelegram.org/?read=15782 on 3C454.3.
+
+
+Cases 0, 1, 2, 3 were tested inside conda environment.

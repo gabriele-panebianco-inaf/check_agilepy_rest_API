@@ -32,6 +32,7 @@ def GetTargetYAML(TargetNumber):
         Targets = yaml.safe_load(file)
             
     SourceName=Targets[f'Target_{TargetNumber}']['SourceName']
+    AGLName = Targets[f'Target_{TargetNumber}']['2AGLName']
     
     # Set File path
     path=str(ConfFileDire.joinpath(f"Analysis_{SourceName}.yml"))
@@ -40,11 +41,11 @@ def GetTargetYAML(TargetNumber):
     if not os.path.exists(path):
         raise FileNotFoundError(f"File does not exists: {path}")
     
-    return path
+    return path, AGLName
 
 
 
-def RunDataAnalysis(ConfFilePath):
+def RunDataAnalysis(ConfFilePath, AGLName):
     
     # Load AGAnalysis object
     ag = AGAnalysis(ConfFilePath)
@@ -60,12 +61,9 @@ def RunDataAnalysis(ConfFilePath):
     sources = ag.loadSourcesFromCatalog("2AGL", rangeDist = (0, 5))
     sources = ag.selectSources("flux > 0", show = True)
     
-    # Free Sources parameters
-    name="2AGLJ0835-4514" # This is Vela
-    sources = ag.freeSources(f'name == "{name}"', "pos", True)
-    sources = ag.freeSources(f'name == "{name}"', "flux", True)
-    
-    
+    # Free Main Source position and Flux
+    sources = ag.freeSources(f'name == "{AGLName}"', "pos", True)
+    sources = ag.freeSources(f'name == "{AGLName}"', "flux", True)
     
     # Generate Maps Data
     try:
@@ -101,11 +99,11 @@ if __name__=="__main__":
     args = parser.parse_args()
     
     # Get Target Name
-    ConfFilePath = GetTargetYAML(args.target)
+    ConfFilePath, AGLName = GetTargetYAML(args.target)
     print(f"Configuration File: {ConfFilePath}")
     
     # Run Analysis
-    RunDataAnalysis(ConfFilePath)
+    RunDataAnalysis(ConfFilePath, AGLName)
     
     # RunTime
     print(f"TOTAL RUNTIME = {float(time()-START):.3f} s.")
