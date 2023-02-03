@@ -10,4 +10,6 @@
 #python DownloadData.py -t 2 > ./Logs/2_DownloadData.log
 #python DownloadData.py -t 3 > ./Logs/3_DownloadData.log
 
-python DataAnalysis.py -t 3
+#python DataAnalysis.py -t 3
+
+python WriteConfFile.py -t 4 
